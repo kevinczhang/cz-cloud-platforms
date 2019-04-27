@@ -28,7 +28,7 @@ Downsides:
 
 The following diagram illustrates the hierarchy of an App Engine app running with multiple services. In this diagram, the app has two services that contain multiple versions, and two of those versions are actively running on multiple instances:
 
-![](../../../.gitbook/assets/image%20%281%29.png)
+![](../../../.gitbook/assets/image%20%283%29.png)
 
 When you build your app on App Engine, you can:
 

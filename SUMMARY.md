@@ -93,4 +93,7 @@
   * [AWS Management Tools](amazon-web-service/aws-management-tools/README.md)
     * [Systems Manager Parameter Store](amazon-web-service/aws-management-tools/systems-manager-parameter-store.md)
     * [CloudFormation](amazon-web-service/aws-management-tools/cloudformation.md)
+  * [Development Tools](amazon-web-service/development-tools/README.md)
+    * [CodeDeploy](amazon-web-service/development-tools/codedeploy.md)
+    * [CodePipeline](amazon-web-service/development-tools/codepipeline.md)
 

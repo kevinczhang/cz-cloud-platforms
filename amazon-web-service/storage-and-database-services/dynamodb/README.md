@@ -88,7 +88,7 @@ MyDocumentAttribute : {
 * Partitions are SSD allocations of storage for the table and automatically replicated across multiple AWS Availability Zones 
 * Number of partitions is determined by the table's provisioned capacity and the storage size of exisiting partitions
 
-![](../../../.gitbook/assets/image%20%287%29.png)
+![](../../../.gitbook/assets/image%20%2811%29.png)
 
 ## DynamoDB Items:
 

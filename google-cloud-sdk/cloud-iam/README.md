@@ -8,7 +8,7 @@ description: >-
 
 ## Overview
 
-![Cloud IAM](../../.gitbook/assets/image%20%2815%29.png)
+![Cloud IAM](../../.gitbook/assets/image%20%2819%29.png)
 
 In Cloud IAM, you grant access to **members**. Members can be of the following types:
 
@@ -46,7 +46,7 @@ A role is a collection of permissions. You cannot assign a permission to the use
 
  You can grant roles to users by creating a _Cloud IAM policy_, which is a collection of statements that define who has what type of access. A policy is attached to a resource and is used to enforce access control whenever that resource is accessed.
 
-![IAM policy](../../.gitbook/assets/image%20%285%29.png)
+![IAM policy](../../.gitbook/assets/image%20%288%29.png)
 
  A Cloud IAM policy is represented by the IAM `Policy` object. An IAM `Policy` object consists of a list of bindings. A `Binding` binds a list of `members` to a `role`.
 

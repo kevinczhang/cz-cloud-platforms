@@ -6,7 +6,7 @@ Cloud Bigtable stores data in massively scalable tables, each of which is a sort
 
 Each row/column intersection can contain multiple _cells_, or versions, at different timestamps, providing a record of how the stored data has been altered over time. Cloud Bigtable tables are sparse; if a cell does not contain any data, it does not take up any space.
 
-![](../../../.gitbook/assets/image%20%2817%29.png)
+![](../../../.gitbook/assets/image%20%2822%29.png)
 
 * **The table contains one column family,** the `follows` family. This family contains multiple column qualifiers.
 * **Column qualifiers are used as data.** This design choice takes advantage of the sparseness of Cloud Bigtable tables, and the fact that new column qualifiers can be added on the fly.
@@ -14,7 +14,7 @@ Each row/column intersection can contain multiple _cells_, or versions, at diffe
 
 ## Cloud Bigtable architecture
 
-![Cloud Bigtable architecture](../../../.gitbook/assets/image%20%2830%29.png)
+![Cloud Bigtable architecture](../../../.gitbook/assets/image%20%2835%29.png)
 
 As the diagram illustrates, all client requests go through a front-end server before they are sent to a Cloud Bigtable node. ****The nodes are organized into a Cloud Bigtable cluster, which belongs to a Cloud Bigtable instance, a container for the cluster.
 

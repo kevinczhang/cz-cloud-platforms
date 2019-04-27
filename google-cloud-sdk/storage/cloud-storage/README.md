@@ -33,7 +33,7 @@ Objects added to this bucket are assigned the selected storage class by default.
 3. Nearline
 4. Coldline
 
-![](../../../.gitbook/assets/image%20%2813%29.png)
+![](../../../.gitbook/assets/image%20%2817%29.png)
 
 <table>
   <thead>

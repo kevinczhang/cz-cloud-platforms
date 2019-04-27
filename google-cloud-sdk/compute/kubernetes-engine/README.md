@@ -77,7 +77,7 @@ Node pools are separate instance groups running Kubernetes in a cluster. You may
 * You care about application portability
 * You want to focus on containers as a unit of deployment
 
-![](../../../.gitbook/assets/image%20%2819%29.png)
+![](../../../.gitbook/assets/image%20%2824%29.png)
 
 When you build with Kubernetes Engine, you can:
 
