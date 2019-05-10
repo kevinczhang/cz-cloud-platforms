@@ -114,8 +114,8 @@ KMS is a managed service to create and control the encryption keys used to encry
    3. There are two types of CMKs: 
       1. **Customer-managed**: CMKs you create, enable/disable, rotate, and which manage the policies that allow access to use the CMK 
       2. **AWS-managed**: CMKs that are created, managed, and used by AWS services integrated with KMS \(these CMKs are named like this: aws/service-name e.g. aws/s3\) 
-2. **Data Keys**: Encryption keys for encrypting large amounts of data or other data encryption keys AWS CMKs can generate, encrypt, and decrypt data keys KMS does not manage or store your data keys - you must use and manage them inside your application KMS cannot use data keys to encrypt data for you 
-3. **Envelope Encryption**: Plaintext data is encrypted with a data key Data keys are encrypted with a key encryption key \(KEK\) A KEK may be encrypted by another KEK, but eventually there is a master key \(the KMS CMK in this case\) that decrypts one or more keys
+2. **Data Keys**: Encryption keys for encrypting large amounts of data or other data encryption keys. AWS CMKs can generate, encrypt, and decrypt data keys. KMS does not manage or store your data keys - you must use and manage them inside your application. KMS cannot use data keys to encrypt data for you.
+3. **Envelope Encryption**: Plaintext data is encrypted with a data key. Data keys are encrypted with a key encryption key \(KEK\). A KEK may be encrypted by another KEK, but eventually there is a master key \(the KMS CMK in this case\) that decrypts one or more keys.
 
 ### KMS API Actions 
 
