@@ -30,7 +30,7 @@ Standard workflow:
 * When you try to get the object, S3 returns a 404 
 * You can still get a specific version of the object by specifying the Version ID
 
-![](../../../.gitbook/assets/image%20%2832%29.png)
+![](../../../.gitbook/assets/image%20%2833%29.png)
 
 ![](../../../.gitbook/assets/image%20%2827%29.png)
 

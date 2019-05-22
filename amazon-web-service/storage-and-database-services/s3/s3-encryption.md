@@ -4,11 +4,11 @@
 
 * In-transit/Client Side Encryption: Using SSL or client-side encryption
 
-![](../../../.gitbook/assets/image%20%2829%29.png)
+![](../../../.gitbook/assets/image%20%2830%29.png)
 
 * At rest: Request that S3 encrypt objects for you
 
-![](../../../.gitbook/assets/image%20%2830%29.png)
+![](../../../.gitbook/assets/image%20%2831%29.png)
 
 ## In-Transit Encryption for S3
 
@@ -27,7 +27,7 @@
 
 Note: This process is primarily handled by the SDK.
 
-![](../../../.gitbook/assets/image%20%2840%29.png)
+![](../../../.gitbook/assets/image%20%2841%29.png)
 
 ![](../../../.gitbook/assets/image%20%2826%29.png)
 
@@ -50,7 +50,7 @@ Note: This process is primarily handled by the SDK.
 
 ![](../../../.gitbook/assets/image%20%2810%29.png)
 
-![](../../../.gitbook/assets/image%20%2834%29.png)
+![](../../../.gitbook/assets/image%20%2835%29.png)
 
 ![](../../../.gitbook/assets/image%20%285%29.png)
 
@@ -67,7 +67,7 @@ Note: This process is primarily handled by the SDK.
 * Bucket policies can require all objects to use server-side encryption by requiring uploads to have the x-amz-server-side-encryption header with a value of "AES-256" 
 * Keys handled by S3 and many details handled by the AWS SDKs:
 
-![](../../../.gitbook/assets/image%20%2839%29.png)
+![](../../../.gitbook/assets/image%20%2840%29.png)
 
 #### KMS-Managed Keys \(SSE-KMS\)
 
