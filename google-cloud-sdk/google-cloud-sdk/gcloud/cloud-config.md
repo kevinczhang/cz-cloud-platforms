@@ -1,9 +1,60 @@
 # gcloud config
 
-### Connect
+## SDK Configurations
+
+### Creating a configuration <a id="creating_a_configuration"></a>
+
+To create a configuration, run [`gcloud config configurations create`](https://cloud.google.com/sdk/gcloud/reference/config/configurations/create):
 
 ```text
-gcloud auth application-default login
+gcloud config configurations create [NAME]
+```
+
+### Activating a configuration <a id="activating_a_configuration"></a>
+
+```text
+gcloud config configurations activate [NAME]
+```
+
+[`gcloud config list`](https://cloud.google.com/sdk/gcloud/reference/config/list) will always show you the properties in your active configuration.
+
+### Listing configurations <a id="listing_configurations"></a>
+
+To list the configurations in your Cloud SDK installation, run [`gcloud config configurations list`](https://cloud.google.com/sdk/gcloud/reference/config/configurations/list):
+
+```text
+gcloud config configurations list
+```
+
+### Setting configuration properties <a id="setting_configuration_properties"></a>
+
+To set and unset the properties in the active configuration, run [`gcloud config set`](https://cloud.google.com/sdk/gcloud/reference/config/set) and [`gcloud config unset`](https://cloud.google.com/sdk/gcloud/reference/config/unset):
+
+```text
+gcloud config set project [PROJECT]
+gcloud config unset disable_usage_reporting
+```
+
+### Viewing configuration properties <a id="viewing_configuration_properties"></a>
+
+To view the properties in a configuration, run: [`gcloud config configurations describe`](https://cloud.google.com/sdk/gcloud/reference/config/configurations/describe):
+
+```text
+gcloud config configurations describe [NAME]
+```
+
+Or, to view properties in the active configuration:
+
+```text
+gcloud config list
+```
+
+### Deleting a configuration <a id="deleting_a_configuration"></a>
+
+To delete a configuration, run: [`gcloud config configurations delete`](https://cloud.google.com/sdk/gcloud/reference/config/configurations/delete):
+
+```text
+gcloud config configurations delete [NAME]
 ```
 
 ### The Cloud SDK supports multiple configurations and allows us to activate the one we want to use easily.

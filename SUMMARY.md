@@ -50,6 +50,8 @@
   * [Google Cloud SDK](google-cloud-sdk/google-cloud-sdk/README.md)
     * [gcloud](google-cloud-sdk/google-cloud-sdk/gcloud/README.md)
       * [gcloud config](google-cloud-sdk/google-cloud-sdk/gcloud/cloud-config.md)
+      * [gcloud services](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-services.md)
+      * [gcloud compute](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-compute.md)
       * [gcloud app](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-app/README.md)
         * [gcloud app deploy](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-app/gcloud-app-deploy.md)
         * [gcloud app instances](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-app/gcloud-app-instances.md)
