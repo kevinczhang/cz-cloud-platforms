@@ -13,7 +13,7 @@ CodeDeploy automates deployments of your applications to EC2, Lambda, and even o
 
 ![](../../.gitbook/assets/image%20%2811%29.png)
 
-![](../../.gitbook/assets/image%20%2822%29.png)
+![](../../.gitbook/assets/image%20%2823%29.png)
 
 ## Deployment Types
 

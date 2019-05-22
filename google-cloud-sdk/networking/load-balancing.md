@@ -1,4 +1,12 @@
+---
+description: Software based load balancer
+---
+
 # Load Balancing
+
+Google Cloud Platform Load Balancing gives you the ability to distribute load-balanced compute resources in single or multiple regions, to meet your high availability requirements, to put your resources behind a single anycast IP and to scale your resources up or down with intelligent Autoscaling.
+
+![](../../.gitbook/assets/image%20%2820%29.png)
 
 ### Summary of Cloud load balancers <a id="summary_of_cloud_load_balancers"></a>
 

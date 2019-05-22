@@ -8,6 +8,9 @@ BBR \("**B**ottleneck **B**andwidth and **R**ound-trip propagation time"\) is a 
 
 [Virtual Private Cloud \(VPC\)](https://cloud.google.com/vpc/docs) provides a set of networking services that your VM instances use. Each instance can be attached to only one network. Every VPC project has a _default network_. You can create additional networks in your project, but networks cannot be shared between projects.
 
+* Auto Mode: Subnets created automatically
+* Custom Mode: Subnets created manually
+
 [_Firewall rules_](https://cloud.google.com/vpc/docs/firewalls) govern traffic coming into instances on a network. The default network has a default set of firewall rules, and you can create custom rules, too.
 
 A [_route_](https://cloud.google.com/vpc/docs/routes) lets you implement more advanced networking functions in your instances, such as creating VPNs. A route specifies how packets leaving an instance should be directed. For example, a route might specify that packets destined for a particular network range should be handled by a gateway virtual machine instance that you configure and operate.

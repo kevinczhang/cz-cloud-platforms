@@ -2,14 +2,14 @@
 
 A VPC network is a global resource which consists of a list of regional virtual subnetworks \(subnets\) in data centers, all connected by a global wide area network. VPC networks are logically isolated from each other in GCP.
 
-![](../../.gitbook/assets/image%20%2831%29.png)
+![](../../.gitbook/assets/image%20%2832%29.png)
 
 ## VPC networks have the following properties:
 
 * VPC networks, including their associated routes and firewall rules, are [global](https://cloud.google.com/compute/docs/regions-zones/global-regional-zonal-resources) resources. They are _not_ associated with any particular region or zone.
-* _Subnets_ are regional resources. Each subnet defines a range of IP addresses. For more information about networks and subnets, see [networks and subnets](https://cloud.google.com/vpc/docs/vpc#vpc_networks_and_subnets).
+* _Subnets_ are regional resources. Each subnet defines a range of IP addresses. For more information about networks and subnets, see [networks and subnets](https://cloud.google.com/vpc/docs/vpc#vpc_networks_and_subnets). Need to be unique within a VPC.
 * Traffic to and from instances can be controlled with network [firewall rules](https://cloud.google.com/vpc/docs/vpc#firewall_rules).
-* Resources within a VPC network can communicate with one another using internal \(private\) IPv4 addresses, subject to applicable network firewall rules. For more information, see [communication within the network](https://cloud.google.com/vpc/docs/vpc#intra_vpc_reqs).
+* Resources within a VPC network can communicate with one another using internal \(private\) IPv4 addresses, subject to applicable network firewall rules with VPC routing. For more information, see [communication within the network](https://cloud.google.com/vpc/docs/vpc#intra_vpc_reqs).
 * Instances with internal IP addresses can communicate with [Google APIs and services](https://developers.google.com/apis-explorer/). For more information, see [Private Access Options](https://cloud.google.com/vpc/docs/private-access-options).
 * Network administration can be secured using [Identity and Access Management \(IAM\)](https://cloud.google.com/iam/docs/) roles.
 * An [organization](https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy#organizations) can use [Shared VPC](https://cloud.google.com/vpc/docs/shared-vpc) to keep a VPC network in a common host project. Authorized IAM members from other projects in the same organization can create resources that use subnets of the Shared VPC network.

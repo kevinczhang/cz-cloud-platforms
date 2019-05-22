@@ -4,11 +4,11 @@
 
 * In-transit/Client Side Encryption: Using SSL or client-side encryption
 
-![](../../../.gitbook/assets/image%20%2832%29.png)
+![](../../../.gitbook/assets/image%20%2833%29.png)
 
 * At rest: Request that S3 encrypt objects for you
 
-![](../../../.gitbook/assets/image%20%2833%29.png)
+![](../../../.gitbook/assets/image%20%2834%29.png)
 
 ## In-Transit Encryption for S3
 
@@ -27,9 +27,9 @@
 
 Note: This process is primarily handled by the SDK.
 
-![](../../../.gitbook/assets/image%20%2843%29.png)
+![](../../../.gitbook/assets/image%20%2844%29.png)
 
-![](../../../.gitbook/assets/image%20%2828%29.png)
+![](../../../.gitbook/assets/image%20%2829%29.png)
 
 ### Using an AWS KMS-managed customer master key \(CMK\) 
 
@@ -50,11 +50,11 @@ Note: This process is primarily handled by the SDK.
 
 ![](../../../.gitbook/assets/image%20%2812%29.png)
 
-![](../../../.gitbook/assets/image%20%2837%29.png)
+![](../../../.gitbook/assets/image%20%2838%29.png)
 
 ![](../../../.gitbook/assets/image%20%286%29.png)
 
-![](../../../.gitbook/assets/image%20%2827%29.png)
+![](../../../.gitbook/assets/image%20%2828%29.png)
 
 ### At Rest Encryption for S3
 
@@ -67,7 +67,7 @@ Note: This process is primarily handled by the SDK.
 * Bucket policies can require all objects to use server-side encryption by requiring uploads to have the x-amz-server-side-encryption header with a value of "AES-256" 
 * Keys handled by S3 and many details handled by the AWS SDKs:
 
-![](../../../.gitbook/assets/image%20%2842%29.png)
+![](../../../.gitbook/assets/image%20%2843%29.png)
 
 #### KMS-Managed Keys \(SSE-KMS\)
 
