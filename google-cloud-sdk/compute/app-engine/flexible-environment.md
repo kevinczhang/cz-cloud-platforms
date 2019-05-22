@@ -2,7 +2,7 @@
 
 ## Choosing an App Engine environment
 
-#### When to choose the standard environment
+## When to choose the standard environment
 
 Application instances run in a [sandbox](https://en.wikipedia.org/wiki/Sandbox_%28computer_security%29), using the runtime environment of a supported language listed below.
 
@@ -19,7 +19,7 @@ The standard environment is optimal for applications with the following characte
 * Intended to **run for free or at very low cost**, where you pay only for what you need and when you need it. For example, your application can scale to 0 instances when there is no traffic.
 * Experiences **sudden and extreme spikes of traffic** which require immediate scaling.
 
-#### When to choose the flexible environment
+## When to choose the flexible environment
 
 Application instances run within Docker containers on Compute Engine virtual machines \(VM\).
 

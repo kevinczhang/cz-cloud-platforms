@@ -1,3 +1,7 @@
+---
+description: This is where we deploy our applications.
+---
+
 # Workloads on GKE
 
 ## Pod
@@ -64,4 +68,8 @@ kubectl create configmap [NAME] [DATA]
 
 * a path to a directory containing one or more configuration files, indicated using the `--from-file`flag
 * key-value pairs, each specified using `--from-literal` flags
+
+## Expose
+
+Create a service
 

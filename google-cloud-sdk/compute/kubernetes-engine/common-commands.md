@@ -2,20 +2,6 @@
 
 ## Quick start
 
-#### To set a default project, run the following command from Cloud Shell:
-
-```text
-gcloud config set project [PROJECT_ID]
-```
-
-#### To set a default compute zone, run the following command:
-
-```text
-gcloud config set compute/zone [COMPUTE_ZONE]
-```
-
-where `[COMPUTE_ZONE]` is the desired geographical compute zone, such as `us-west1-a`. 
-
 #### To create a cluster, run the following command:
 
 ```text

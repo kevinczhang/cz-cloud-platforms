@@ -30,13 +30,13 @@ Standard workflow:
 * When you try to get the object, S3 returns a 404 
 * You can still get a specific version of the object by specifying the Version ID
 
-![](../../../.gitbook/assets/image%20%2833%29.png)
+![](../../../.gitbook/assets/image%20%2835%29.png)
 
-![](../../../.gitbook/assets/image%20%2827%29.png)
+![](../../../.gitbook/assets/image%20%2829%29.png)
 
 Permenantly delete a version: Make a delete request and specify the version to be deleted
 
-![](../../../.gitbook/assets/image%20%2816%29.png)
+![](../../../.gitbook/assets/image%20%2818%29.png)
 
 ## Restoring Versioned Objects 
 

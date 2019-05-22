@@ -45,6 +45,6 @@ In all these cases, the Cloud Datastore API returns an error.
 
 Datastore queries can deliver their results at either of two consistency levels:
 
-* [_Strongly consistent_](https://en.wikipedia.org/wiki/Strong_consistency) queries guarantee the most up-to-date results, but may take longer to complete or may not be supported in certain cases.
-* [_Eventually consistent_](https://en.wikipedia.org/wiki/Eventual_consistency) queries generally run faster, but may occasionally return stale results.
+* [_Strongly consistent_](https://en.wikipedia.org/wiki/Strong_consistency) queries guarantee the most up-to-date results, but may take longer to complete or may not be supported in certain cases. \(Look up by Row key\)
+* [_Eventually consistent_](https://en.wikipedia.org/wiki/Eventual_consistency) queries generally run faster, but may occasionally return stale results. \(Look up by query\)
 

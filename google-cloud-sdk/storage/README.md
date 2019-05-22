@@ -12,5 +12,5 @@ GCP provides a variety of storage services, including:
   * Coldline provides the lowest-cost archival storage for backup and disaster recovery.
 * [Persistent disks on Compute Engine](https://cloud.google.com/compute/docs/disks/#overview), for use as primary storage for your instances. Compute Engine offers both hard-disk-based persistent disks, called _standard persistent disks_, and solid-state persistent disks \(SSD\).
 
-![](../../.gitbook/assets/image%20%284%29.png)
+![](../../.gitbook/assets/image%20%285%29.png)
 

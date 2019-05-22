@@ -7,6 +7,10 @@ description: >-
 
 # Kubernetes Engine
 
+Kubernetes is a cluster of servers/nodes, which has some processes/pods, which has ip addresses and is running containers. We can control pods using controllers, like deployment controller \(how to deploy\), daemontSet controller \(one on each pod\) refer to workload section. Services act as the entrypoints for Kubernetes cluster.
+
+![](../../../.gitbook/assets/image%20%284%29.png)
+
 ## Kubernetes cluster types
 
 * Clone an existing cluster
@@ -77,7 +81,7 @@ Node pools are separate instance groups running Kubernetes in a cluster. You may
 * You care about application portability
 * You want to focus on containers as a unit of deployment
 
-![](../../../.gitbook/assets/image%20%2824%29.png)
+![](../../../.gitbook/assets/image%20%2826%29.png)
 
 When you build with Kubernetes Engine, you can:
 

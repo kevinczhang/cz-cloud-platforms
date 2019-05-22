@@ -32,7 +32,7 @@ An object lifecycle policy is a set of rules that automate the migration of an o
 * After 30 days, I may only need to access that file once a week for the 60 next days 
 * After which \(90 days total\) I will probably never access the file again but want to keep it just in case
 
-![](../../../.gitbook/assets/image%20%2812%29.png)
+![](../../../.gitbook/assets/image%20%2814%29.png)
 
 
 

@@ -59,5 +59,5 @@ GCP client libraries expose APIs for two main purposes:
 * _App APIs_ provide access to services. App APIs are optimized for supported languages, such as Node.js and Python.
 * _Admin APIs_ offer functionality for resource management. 
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 

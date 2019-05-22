@@ -6,15 +6,21 @@ description: >-
 
 # Big Query
 
-Good for:
+#### Good for:
 
 * OLAP workloads up to petabyte scale
 * Big data exploration and processing
 * Reporting via business intelligence \(BI\) tools
 
-Common workloads:
+#### Common workloads:
 
 * Analytical reporting on large data
 * Data science and advanced analyses
 * Big data processing using SQL
+
+#### Calculating cost:
+
+* UI: Query validator
+* CLI: --dry-run
+* REST: dryRun property to true
 

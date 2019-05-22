@@ -2,7 +2,7 @@
 
 A VPC network is a global resource which consists of a list of regional virtual subnetworks \(subnets\) in data centers, all connected by a global wide area network. VPC networks are logically isolated from each other in GCP.
 
-![](../../.gitbook/assets/image%20%2829%29.png)
+![](../../.gitbook/assets/image%20%2831%29.png)
 
 ## VPC networks have the following properties:
 

@@ -14,13 +14,13 @@ description: >-
 
 This diagram shows a single node running two Pods, each attached to two volumes.
 
-![](../../../.gitbook/assets/image%20%2815%29.png)
+![](../../../.gitbook/assets/image%20%2817%29.png)
 
 #### Services <a id="services"></a>
 
  In Kubernetes, you can assign arbitrary key-value pairs called [labels](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-managing-labels) to any Kubernetes resource. Kubernetes uses labels to group multiple related Pods into a logical unit called a Service. A Service has a stable IP address and ports, and provides load balancing among the set of Pods whose labels match all the labels you define in the [label selector](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors) when you create the Service.
 
-![](../../../.gitbook/assets/image%20%2813%29.png)
+![](../../../.gitbook/assets/image%20%2815%29.png)
 
 When you configure a Service, you can optionally remap its listening port by defining values for `port` and `targetPort`.
 

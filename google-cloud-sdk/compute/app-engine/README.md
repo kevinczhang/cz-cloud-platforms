@@ -6,6 +6,10 @@ description: >-
 
 # App Engine
 
+* **Application: Versioning, Traffic Splitting, Caching.**
+* **Database: Cloud Datastore**
+* **Local dev server.**
+
 Web based workloads, no ops, high-availability.
 
 * You value development over ops
@@ -13,18 +17,6 @@ Web based workloads, no ops, high-availability.
 * Application portability isn't a primary concern
 * **Your application speaks HTTP**
 * You don't care about the underlying OS
-
-Upsides:
-
-* Inexpensive
-* Fast startup
-
-Downsides:
-
-* No custom runtimes
-* No 3rd party binaries
-* No writing to disk
-* No SSH
 
 The following diagram illustrates the hierarchy of an App Engine app running with multiple services. In this diagram, the app has two services that contain multiple versions, and two of those versions are actively running on multiple instances:
 

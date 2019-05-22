@@ -10,6 +10,18 @@ description: >-
 
 Go, Java, PHP, NODE.JS, PYTHON
 
+#### Upsides:
+
+* Inexpensive
+* Fast startup
+
+#### Downsides:
+
+* No custom runtimes
+* No 3rd party binaries
+* No writing to disk
+* No SSH
+
 ### Instance classes <a id="instance_classes"></a>
 
 Each application running in the standard environment has an _instance class_, which determines its compute resources and pricing. 

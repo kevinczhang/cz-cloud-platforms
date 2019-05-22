@@ -23,5 +23,5 @@ A continuous delivery service that can model, visualize and automate your softwa
 * Actions - Stages contain at least one action, these actions take some action on artifacts and will have artifacts as either an input an output or both 
 * Transitions - The progressing from one stage to another inside of a pipeline
 
-![](../../.gitbook/assets/image%20%286%29.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 
