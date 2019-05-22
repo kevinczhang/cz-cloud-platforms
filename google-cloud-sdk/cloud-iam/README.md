@@ -60,3 +60,24 @@ The Cloud IAM methods are:
 * `getIamPolicy()`: Allows you to get a policy that was previously set.
 * `testIamPermissions()`: Allows you to test whether the caller has the specified permissions for a resource.
 
+The following code snippet shows the structure of a Cloud IAM policy.
+
+```text
+{
+  "bindings": [
+   {
+     "role": "roles/storage.objectAdmin",
+     "members": [
+       "user:alice@example.com",
+       "serviceAccount:my-other-app@appspot.gserviceaccount.com",
+       "group:admins@example.com",
+       "domain:google.com" ]
+   },
+   {
+     "role": "roles/storage.objectViewer",
+     "members": ["user:bob@example.com"]
+   }
+   ]
+}
+```
+
