@@ -7,9 +7,11 @@ Instance Groups allow you to think about a group of instances as single entity. 
 3. **Instance group type** \(details below\)
 4. **Instance template** \(parameters same as creating VM instance\)
 5. **Auto-scaling** \(On or Off\)
-6. **Auto - scaling policy** \(CPU usage, HTTP load balancing usage, Stackdriver monitoring metric, Multiple metrics\)
+6. **Auto - scaling policy** \(CPU usage, HTTP load balancing usage, Stackdriver monitoring metric, Multiple metrics\) 
+   1. _**All average values except the cool down period**_**.** 
+   2. New instances will be up for at least 10 minutes.
 7. **Auto-healing** \(Auto-healing allows recreating VM instances when needed. You can use a health check to recreate a VM instance if the health check finds it unresponsive. If you don't select a health check, Compute Engine will recreate VM instances only when they're not running.\)
-8. **Health Check** \(A health check determines whether a VM instance is healthy by sending HTTP requests to the instance. An instance is considered healthy if it returns consecutive responses within a specified time. Health checks are used for load balancing and auto-scaling managed instance groups.\)
+8. **Health Check** \(A health check determines whether a VM instance is healthy by sending HTTP requests to the instance. An instance is considered healthy if it returns consecutive responses within a specified time. Health checks are used for load balancing and auto-scaling managed instance groups.\) _**Initial delay should consider the startup script running time.**_
 
 ## Instance group type
 

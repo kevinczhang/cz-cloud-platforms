@@ -9,9 +9,9 @@ description: >-
 Web based workloads, no ops, high-availability.
 
 * You value development over ops
-* You want high availalability withouth the 3 A.M. pager calls
+* You want high availability without the 3 A.M. pager calls
 * Application portability isn't a primary concern
-* Your application speaks HTTP
+* **Your application speaks HTTP**
 * You don't care about the underlying OS
 
 Upsides:

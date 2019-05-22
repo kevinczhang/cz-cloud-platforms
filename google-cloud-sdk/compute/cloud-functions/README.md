@@ -6,12 +6,13 @@ description: >-
 
 # Cloud Functions
 
-Cloud Functions are a good choice for use cases that include:
+### Cloud Functions are a good choice for use cases that include:
 
 * Data processing and ETL operations, for scenarios such as video transcoding and IoT streaming data.
 * Webhooks to respond to HTTP triggers.
 * Lightweight APIs that comprise loosely coupled logic into applications.
 * Mobile backend functions.
+* You code executes within the limits.
 
 Cloud Functions can be written using JavaScript, Python 3, or Go runtimes on Google Cloud Platform. Cloud Functions removes the work of managing servers, configuring software, updating frameworks, and patching operating systems.
 

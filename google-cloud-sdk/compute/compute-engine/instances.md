@@ -37,7 +37,7 @@ A preemptible VM is an instance that you can create and run at a much [lower pri
 
 Compute Engine performs the following steps to preempt an instance:
 
-1. Compute Engine sends a preemption notice to the instance in the form of an [ACPI G2 Soft Off](https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface#Power_states)signal. You can use a [shutdown script](https://cloud.google.com/compute/docs/instances/create-start-preemptible-instance#handle_preemption) to handle the preemption notice and complete cleanup actions before the instance stops.
+1. Compute Engine sends a preemption notice to the instance in the form of an [ACPI G2 Soft Off](https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface#Power_states) signal. You can use a [shutdown script](https://cloud.google.com/compute/docs/instances/create-start-preemptible-instance#handle_preemption) to handle the preemption notice and complete cleanup actions before the instance stops.
 2. If the instance does not stop after 30 seconds, Compute Engine sends an [ACPI G3 Mechanical Off](https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface#Power_states) signal to the operating system.
 3. Compute Engine transitions the instance to a `TERMINATED` state.
 
@@ -101,6 +101,8 @@ A sole-tenant node is a physical Compute Engine server that is dedicated to host
 ## Overview
 
 Connecting into Linux use SSH with port 22 while windows using RDP. Compute Engine instances can run the [public images](https://cloud.google.com/compute/docs/images) for Linux and Windows Server that Google provides as well as private custom images that you can [create](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images) or [import from your existing systems](https://cloud.google.com/compute/docs/images/importing-virtual-disks). You can also [deploy Docker containers](https://cloud.google.com/compute/docs/containers/deploying-containers), which are automatically launched on instances running the [Container-Optimized OS](https://cloud.google.com/container-optimized-os/docs/) public image.
+
+#### In order to connect to windows using RDP, a password has to be setup first.
 
 An instance can have the following states:
 
