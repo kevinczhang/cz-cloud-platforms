@@ -77,21 +77,7 @@ You can run the following as alternatives to `gcloud init`:
       <td style="text-align:left">Create and manage Cloud SDK configurations and properties.</td>
     </tr>
   </tbody>
-</table>## Authorizing SDK Tools
-
-### Connect
-
-```text
-gcloud auth application-default login
-```
-
-### Listing accounts <a id="listing_accounts"></a>
-
-```text
-gcloud auth list
-```
-
-### Switching the active account <a id="switching_the_active_account"></a>
+</table>### Switching the active account <a id="switching_the_active_account"></a>
 
 To switch the active account, run [`gcloud config set`](https://cloud.google.com/sdk/gcloud/reference/config/set):
 
@@ -115,14 +101,6 @@ To find the location of your credential files, run [`gcloud info`](https://cloud
 
 ```text
 gcloud info
-```
-
-### Revoking credentials for an account <a id="revoking_credentials_for_an_account"></a>
-
-To revoke credentials, run: [`gcloud auth revoke`](https://cloud.google.com/sdk/gcloud/reference/auth/revoke):
-
-```text
-gcloud auth revoke [ACCOUNT]
 ```
 
 ## Others

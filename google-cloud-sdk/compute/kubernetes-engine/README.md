@@ -93,3 +93,12 @@ When you build with Kubernetes Engine, you can:
 * Create and manage \_[services](https://kubernetes.io/docs/concepts/services-networking/service/)\_. Services create an abstraction layer that decouples frontend clients from pods that provide backend functions. In this way, clients can work without concerns about which pods are being created and deleted at any given moment.
 * Create an external network load balancer.
 
+## Steps to deploy code to GKE
+
+1. Build Docker image containing our code
+2. Push image to Google Container Registry
+3. Deploy container into Pod through a Kubernetes Deployment resource
+4. Pull environment variables from ConfigMap
+5. Pull the service account key from a volume mount
+6. Create a service in front of the deployment
+
