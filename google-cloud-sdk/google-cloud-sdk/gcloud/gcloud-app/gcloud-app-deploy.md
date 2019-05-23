@@ -8,9 +8,11 @@ description: >-
 
  `gcloud app deploy` \[[`DEPLOYABLES`](https://cloud.google.com/sdk/gcloud/reference/app/deploy#DEPLOYABLES) …\] \[[`--bucket`](https://cloud.google.com/sdk/gcloud/reference/app/deploy#--bucket)=`BUCKET`\] \[[`--image-url`](https://cloud.google.com/sdk/gcloud/reference/app/deploy#--image-url)=`IMAGE_URL`\] \[[`--no-promote`](https://cloud.google.com/sdk/gcloud/reference/app/deploy#--promote)\]\[[`--no-stop-previous-version`](https://cloud.google.com/sdk/gcloud/reference/app/deploy#--stop-previous-version)\] \[[`--version`](https://cloud.google.com/sdk/gcloud/reference/app/deploy#--version)=`VERSION`, [`-v`](https://cloud.google.com/sdk/gcloud/reference/app/deploy#-v) [`VERSION`](https://cloud.google.com/sdk/gcloud/reference/app/deploy#VERSION)\] \[[`GCLOUD_WIDE_FLAG`](https://cloud.google.com/sdk/gcloud/reference/app/deploy#GCLOUD-WIDE-FLAGS) `…`\]
 
-\[`DEPLOYABLES` …\]
+This command is used to deploy both code and configuration to the App Engine server. As an input it takes one or more `DEPLOYABLES` that should be uploaded. A `DEPLOYABLE` can be a service's .yaml file or a configuration's .yaml file.
 
 The yaml files for the services or configurations you want to deploy. If not given, defaults to `app.yaml` in the current directory. If that is not found, attempts to automatically generate necessary configuration files \(such as app.yaml\) in the current directory.
+
+> Note, for Java Standard apps, you must add the path to the `appengine-web.xml` file inside the WEB-INF directory. gcloud app deploy skips files specified in the .gcloudignore file.
 
 ### Examples
 

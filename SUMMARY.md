@@ -59,6 +59,7 @@
       * [gcloud container](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-container.md)
       * [gcloud spanner](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-spanner.md)
       * [gcloud deployment-manager](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-deployment-manager.md)
+      * [gcloud functions](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-functions.md)
       * [gcloud app](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-app/README.md)
         * [gcloud app deploy](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-app/gcloud-app-deploy.md)
         * [gcloud app instances](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-app/gcloud-app-instances.md)
