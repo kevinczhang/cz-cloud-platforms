@@ -116,5 +116,50 @@ To create a service account for your project, run:
       --display-name "My Service Account"
 ```
 
+To add an IAM policy binding for the role of 'roles/editor' for the user 'test-user@gmail.com' on a service account with identifier 'my-iam-account@somedomain.com', run:
 
+```text
+  $ gcloud iam service-accounts add-iam-policy-binding \
+      my-iam-account@somedomain.com \
+      --member='user:test-user@gmail.com' --role='roles/editor'
+```
+
+To add an IAM policy binding for the role of 'roles/editor' to the service account 'test-proj1@example.domain.com', run:
+
+```text
+  $ gcloud iam service-accounts add-iam-policy-binding \
+      test-proj1@example.domain.com \
+      --member='serviceAccount:test-proj1@example.domain.com' \
+      --role='roles/editor'
+```
+
+To add an IAM policy binding for the role of 'roles/editor' for all authenticated users on a service account with identifier 'my-iam-account@somedomain.com', run:
+
+```text
+  $ gcloud iam service-accounts add-iam-policy-binding \
+      my-iam-account@somedomain.com --member='allAuthenticatedUsers' \
+      --role='roles/editor'
+```
+
+To print the IAM policy for a given service account, run:
+
+```text
+  $ gcloud iam service-accounts get-iam-policy \
+      my-iam-account@somedomain.com
+```
+
+To create a new private key for a service account, and save a copy of it locally, run:
+
+```text
+  $ gcloud iam service-accounts keys create \
+      --iam-account my-iam-account@somedomain.com key.json
+```
+
+To list all user-managed keys created before noon on July 19th, 2015 \(to perform key rotation, for example\), run:
+
+```text
+  $ gcloud iam service-accounts keys list \
+      --iam-account my-iam-account@somedomain.com --managed-by user \
+      --created-before 2015-07-19T12:00:00Z
+```
 
