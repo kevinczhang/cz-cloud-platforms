@@ -55,6 +55,7 @@
       * [gcloud compute](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-compute.md)
       * [gcloud pubsub](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-pubsub.md)
       * [gcloud bigtable](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-bigtable.md)
+      * [gcloud container](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-container.md)
       * [gcloud app](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-app/README.md)
         * [gcloud app deploy](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-app/gcloud-app-deploy.md)
         * [gcloud app instances](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-app/gcloud-app-instances.md)
