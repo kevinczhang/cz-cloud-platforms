@@ -50,6 +50,7 @@
   * [Google Cloud SDK](google-cloud-sdk/google-cloud-sdk/README.md)
     * [gcloud](google-cloud-sdk/google-cloud-sdk/gcloud/README.md)
       * [gcloud config](google-cloud-sdk/google-cloud-sdk/gcloud/cloud-config.md)
+      * [gcloud iam](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-iam.md)
       * [gcloud services](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-services.md)
       * [gcloud compute](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-compute.md)
       * [gcloud pubsub](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-pubsub.md)
