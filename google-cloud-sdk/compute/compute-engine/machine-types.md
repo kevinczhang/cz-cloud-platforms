@@ -15,7 +15,6 @@ Shared-core machine types:
 | f1-micro | Micro machine type with 0.2 vCPU, 0.60 GB of memory, backed by a shared physical core |
 | :--- | :--- |
 | g1-small | Shared-core machine type with 0.5 vCPU, 1.70 GB of memory, backed by a shared physical core. |
-|  |  |
 
 Memory-optimized machine types: Memory-optimized machine types are ideal for tasks that require intensive use of memory with higher memory to vCPU ratios than high-memory machine types. 
 

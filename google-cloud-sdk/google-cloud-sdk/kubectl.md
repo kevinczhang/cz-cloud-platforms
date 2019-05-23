@@ -1,3 +1,7 @@
+---
+description: 'get, describe, exec, run, delete'
+---
+
 # kubectl
 
 ## Pod & Container

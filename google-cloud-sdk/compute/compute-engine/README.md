@@ -32,9 +32,18 @@ However, VMs aren't just for complex computing. They're also great for running n
 * Create [instance groups](https://cloud.google.com/compute/docs/instance-groups) to more easily manage multiple instances together.
 * Use [autoscaling with an instance group](https://cloud.google.com/compute/docs/autoscaler) to automatically add and remove capacity.
 * Attach and detach [disks](https://cloud.google.com/compute/docs/disks) as needed.
-* [Use SSH to connect](https://cloud.google.com/compute/docs/instances/connecting-to-instance) directly to your instances.
+* [Use SSH to connect](https://cloud.google.com/compute/docs/instances/connecting-to-instance) directly to your instances. \(gcloud compute ssh or add public key as metadata then use ssh\)
 
-### 
+## Steps to create compute engine
 
+1. gcloud projects create
+2. gcloud billing accounts list
+3. gcloud projects billing account link projectID --billing-account=...
+4. create VPC and subnets
+5. Create VM instance
+6. Create firewall rules
 
+As cloud engineers, we know how important backups are to a company. Disk snapshots allow us to create an incremental backup of our persistent disks.
+
+Images are copies of an instance, and they're robust enough to serve as both a backup and as a "golden image" that contains all of our code and configuration.
 
