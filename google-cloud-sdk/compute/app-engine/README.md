@@ -44,5 +44,11 @@ When you build your app on App Engine, you can:
 * Deploy your app by using the App Engine launcher GUI application on macOS or Microsoft Windows or by using the command line.
 * For the standard environment, run your app from the Central US or Western Europe regions.
 
-For a complete list and description of App Engine's features, see the [App Engine documentation](https://cloud.google.com/appengine/docs/).
+For a complete list and description of App Engine's features, see the [App Engine documentation](https://cloud.google.com/appengine/docs/)..
+
+## App Engine scaling options
+
+* Automatic Scaling
+* Manual Scaling
+* Basic Scaling - Standard Environment ONLY
 

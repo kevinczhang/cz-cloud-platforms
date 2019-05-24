@@ -64,6 +64,7 @@
       * [gcloud app](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-app/README.md)
         * [gcloud app deploy](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-app/gcloud-app-deploy.md)
         * [gcloud app instances](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-app/gcloud-app-instances.md)
+        * [gcloud app services](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-app/gcloud-app-services.md)
     * [gsutil Tool](google-cloud-sdk/google-cloud-sdk/gsutil-tool.md)
     * [bq Tool](google-cloud-sdk/google-cloud-sdk/bq-command-line-tool.md)
     * [kubectl](google-cloud-sdk/google-cloud-sdk/kubectl.md)

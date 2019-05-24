@@ -1,4 +1,22 @@
+---
+description: >-
+  App Engine flexible environment allows you to customize the runtime and even
+  the operating system of your virtual machine using Dockerfiles.
+---
+
 # Flexible Environment
+
+* **Runtimes** - The flexible environment includes native support for Java 8 \(with no web-serving framework\), Eclipse Jetty 9, Python 2.7 and Python 3.6, Node.js, Ruby, PHP, .NET core, and Go. Developers can customize these runtimes or provide their own runtime by supplying a custom Docker image or Dockerfile from the open source community.
+* **Infrastructure Customization** - Because VM instances in the flexible environment are [Google Compute Engine](https://cloud.google.com/compute/)virtual machines, you can take advantage of custom libraries, use SSH for debugging, and deploy your own Docker containers.
+* **Performance** - Take advantage of a wide array of CPU and memory configurations. You can specify how much CPU and memory each instance of your application needs and the flexible environment will provision the necessary infrastructure for you.
+
+App Engine manages your virtual machines, ensuring that:
+
+* Instances are health-checked, healed as necessary, and co-located with other services within the project.
+* Critical, backwards compatible updates are automatically applied to the underlying operating system.
+* VM instances are automatically located by geographical region according to the settings in your project. Google's management services ensure that all of a project's VM instances are co-located for optimal performance.
+* VM instances are restarted on a weekly basis. During restarts Google's management services will apply any necessary operating system and security updates.
+* You always have root access to Compute Engine VM instances. SSH access to VM instances in the flexible environment is disabled by default. If you choose, you can enable root access to your app's VM instances.
 
 ## Choosing an App Engine environment
 
