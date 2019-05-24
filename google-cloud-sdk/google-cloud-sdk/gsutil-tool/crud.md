@@ -1,5 +1,36 @@
 # CRUD
 
+## mb - Make buckets
+
+The mb command creates a new bucket. Cloud Storage has a single namespace, so you are not allowed to create a bucket with a name already in use by another user.
+
+```text
+gsutil mb [-b <on|off>] [-c class] [-l location] [-p proj_id]
+          [--retention time] url...
+```
+
+* `-p`: specify the project with which your bucket will be associated.
+* `-c`: specify the default [storage class](https://cloud.google.com/storage/docs/storage-classes) of your bucket.
+* `-l`: specify the location of your bucket.
+
+### Bucket Storage Classes <a id="bucket-storage-classes"></a>
+
+You can specify one of the [storage classes](https://cloud.google.com/storage/docs/storage-classes) for a bucket with the -c option.
+
+```text
+gsutil mb -c nearline gs://some-bucket
+```
+
+### Bucket Locations <a id="bucket-locations"></a>
+
+You can specify one of the [available locations](https://cloud.google.com/storage/docs/locations) for a bucket with the -l option.
+
+```text
+gsutil mb -l asia gs://some-bucket
+
+gsutil mb -c regional -l us-east1 gs://some-bucket
+```
+
 ## ls - List providers, buckets, or objects
 
 If you run gsutil ls without URLs, it lists all of the Cloud Storage buckets under your default project ID:
