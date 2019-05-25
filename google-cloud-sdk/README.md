@@ -1,8 +1,8 @@
 ---
 description: >-
-  Google Cloud SDK is a set of tools that you can use to manage resources and
-  applications hosted on Google Cloud Platform. These include the gcloud,
-  gsutil, and bq command line tools.
+  Google Cloud Platform is a leading public cloud that provides its users to
+  many of the same software, hardware, and networking infrastructure used to
+  power Google services.
 ---
 
 # Google Cloud Platform
@@ -21,7 +21,7 @@ _zonal resources_ include VM instances, their types, and disks.
 
 ## Projects
 
-Any GCP resources that you allocate and use must belong to a project.
+Any GCP resources that you allocate and use must belong to a project. A project is made up of the settings, permissions, and other metadata that describe your applications.
 
 Each GCP project has:
 
