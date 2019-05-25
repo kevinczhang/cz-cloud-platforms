@@ -83,3 +83,19 @@ Each policy specifies the following:
 * Optional **notifications** sent through email, SMS, or other channels to let your support team know a resource is unhealthy.
 * Optional **documentation** that can be included in some types of notifications to help your support team resolve the issue.
 
+## Custom metrics
+
+Custom metrics are metrics defined by users. Custom metrics use the same elements that the built-in Stackdriver Monitoring metrics use:
+
+* A set of data points.
+* Metric-type information, which tells you what the data points represent.
+* Monitored-resource information, which tells you where the data points originated.
+
+ To use a custom metric, you must have a metric descriptor for your new metric type. Stackdriver Monitoring can create the metric descriptor for you automatically, or you can use the [metricDescriptors.create](https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.metricDescriptors/create) API method to create it yourself.
+
+## Resource Groups
+
+Stackdriver lets you define and monitor groups of resources, such as VM instances, databases, and load balancers. You can organize resources into groups based on criteria that make sense for your applications. Groups can be based on names, labels, regions, applications, and other criteria. You can also create subgroups, up to six levels deep, within groups. You can create up to 500 groups in your Workspace.
+
+With groups, you can monitor a set of resources as a single entity. A resource belongs to a group if the resource meets the membership criteria of the group. Resources can belong to multiple groups.
+

@@ -12,6 +12,8 @@
     * [Export Billing](google-cloud-sdk/cloud-billing/export-billing.md)
   * [Stackdriver](google-cloud-sdk/stackdriver/README.md)
     * [Stackdriver Monitoring](google-cloud-sdk/stackdriver/stackdriver-monitoring.md)
+    * [Stackdriver Logging](google-cloud-sdk/stackdriver/stackdriver-logging.md)
+    * [Application Performance Management](google-cloud-sdk/stackdriver/application-performance-management.md)
   * [Compute](google-cloud-sdk/compute/README.md)
     * [Compute Engine](google-cloud-sdk/compute/compute-engine/README.md)
       * [VM Instances](google-cloud-sdk/compute/compute-engine/instances.md)
