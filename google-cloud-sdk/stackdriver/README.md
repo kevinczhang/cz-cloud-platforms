@@ -6,13 +6,13 @@ description: >-
 
 # Stackdriver
 
-## Stackdriver Logging
-
-Stackdriver Logging collects and stores logs from applications and services running on Cloud Platform. You can use Stackdriver Logging with App Engine or Compute Engine. The [Logs Viewer](https://cloud.google.com/logging/docs/view/logs_viewer) in the GCP Console lets you see your logs. You can export your logs to Cloud Storage, BigQuery, and Cloud Pub/Sub so you can process them more easily. The Stackdriver Logging Agent enables you to integrate third-party logs.
-
 ## Stackdriver Monitoring
 
 Stackdriver Monitoring provides dashboards and alerts for your applications that run on Cloud Platform. You configure Stackdriver Monitoring using the [Stackdriver Monitoring Console](https://app.google.stackdriver.com/). Review performance metrics for cloud services, Compute Engine instances, and common open source servers such as MongoDB, Apache, Nginx, and Elasticsearch. You can use the Stackdriver Monitoring API to retrieve monitoring data and create custom metrics.
+
+## Stackdriver Logging
+
+Stackdriver Logging collects and stores logs from applications and services running on Cloud Platform. You can use Stackdriver Logging with App Engine or Compute Engine. The [Logs Viewer](https://cloud.google.com/logging/docs/view/logs_viewer) in the GCP Console lets you see your logs. You can export your logs to Cloud Storage, BigQuery, and Cloud Pub/Sub so you can process them more easily. The Stackdriver Logging Agent enables you to integrate third-party logs.
 
 ## Debugging, tracing, and analysis
 
