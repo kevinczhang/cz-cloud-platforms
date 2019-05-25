@@ -275,9 +275,9 @@ Cloud IAM provides additional predefined roles that give granular access to spec
 
 Custom roles are user-defined, and allow you to bundle one or more supported permissions to meet your specific needs. Custom roles are not maintained by Google; when new permissions, features, or services are added to GCP, your custom roles will not be updated automatically.
 
- To create a custom role, a caller must have the `iam.roles.create` permission. 
+To create a custom role, a caller must have the `iam.roles.create` permission. Custom roles can only be used to grant permissions in policies for the same project or organization that owns the roles or resources under them. You cannot grant custom roles from one project or organization on a resource owned by a different project or organization.
 
- Users who are not owners, including organization administrators, must be assigned either the Organization Role Administrator role \(`roles/iam.organizationRoleAdmin`\) or the IAM Role Administrator role \(`roles/iam.roleAdmin`\). The IAM Security Reviewer role \(`roles/iam.securityReviewer`\) enables the ability to view custom roles but not administer them.
+Users who are not owners, including organization administrators, must be assigned either the Organization Role Administrator role \(`roles/iam.organizationRoleAdmin`\) or the IAM Role Administrator role \(`roles/iam.roleAdmin`\). The IAM Security Reviewer role \(`roles/iam.securityReviewer`\) enables the ability to view custom roles but not administer them.
 
 **Unsupported or unavailable permissions**
 
