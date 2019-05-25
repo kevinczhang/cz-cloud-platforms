@@ -1,3 +1,10 @@
+---
+description: >-
+  When an identity calls a Google Cloud Platform API, Cloud Identity and Access
+  Management requires that the identity has the appropriate permissions to use
+  the resource.
+---
+
 # Role
 
 There are three kinds of roles in Cloud IAM:
@@ -11,7 +18,16 @@ To determine if one or more permissions are included in a primitive, predefined,
 * The [`gcloud iam roles describe`](https://cloud.google.com/sdk/gcloud/reference/iam/roles/describe) command
 * The [`roles.get()`](https://cloud.google.com/iam/reference/rest/v1/roles/get) API
 
-### Primitive roles <a id="primitive_roles"></a>
+## Invitation flow
+
+You cannot grant the owner role to a member for a project using the Cloud IAM API or the `gcloud` command-line tool. You can only add owners to a project using the GCP Console. An invitation will be sent to the member via email and the member must accept the invitation to be made an owner of the project.
+
+Note that invitation emails aren't sent in the following cases:
+
+* when you're granting a role other than the owner.
+* when an organization member adds another member of their organization as an owner of a project within that organization.
+
+## Primitive roles
 
 There are three roles that existed prior to the introduction of Cloud IAM: Owner, Editor, and Viewer. These roles are concentric; that is, the Owner role includes the permissions in the Editor role, and the Editor role includes the permissions in the Viewer role.
 
@@ -52,13 +68,11 @@ There are three roles that existed prior to the introduction of Cloud IAM: Owner
       </td>
     </tr>
   </tbody>
-</table>### Predefined roles <a id="predefined_roles"></a>
+</table>## Predefined roles
 
 Cloud IAM provides additional predefined roles that give granular access to specific Google Cloud Platform resources and prevent unwanted access to other resources. You can grant multiple roles to the same user.
 
 #### App Engine roles <a id="app-engine-roles"></a>
-
-
 
 | Role | Description |
 | :--- | :--- |

@@ -26,17 +26,17 @@ This is a special identifier that represents anyone who is authenticated with a 
 
 This is a special identifier that represents anyone who is on the internet, including authenticated and unauthenticated users. Note that some GCP APIs require authentication of any user accessing the service, and in those cases, allUsers will only imply authorization for all authenticated users.
 
-## Concepts related to access management
+## Basic Concepts
 
 When an authenticated member attempts to access a resource, Cloud IAM checks the resource's Cloud IAM policy to determine whether the action is allowed.
 
 ### Resource
 
- You can grant access to users for a GCP resource. Some examples of resources are [projects](https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy#projects), [Compute Engine instances](https://cloud.google.com/compute/docs/instances/), and [Cloud Storage buckets](https://cloud.google.com/storage/docs/key-terms).
+You can grant access to users for a GCP resource. Some examples of resources are [projects](https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy#projects), [Compute Engine instances](https://cloud.google.com/compute/docs/instances/), and [Cloud Storage buckets](https://cloud.google.com/storage/docs/key-terms).
 
 ### Permissions
 
- Permissions determine what operations are allowed on a resource. In the Cloud IAM world, permissions are represented in the form of `<service>.<resource>.<verb>`, for example `pubsub.subscriptions.consume`.  You don't assign permissions to users directly. Instead, you assign them a **Role** which contains one or more permissions.
+Permissions determine what operations are allowed on a resource. In the Cloud IAM world, permissions are represented in the form of `<service>.<resource>.<verb>`, for example `pubsub.subscriptions.consume`.  You don't assign permissions to users directly. Instead, you assign them a **Role** which contains one or more permissions.
 
 ### Roles
 
@@ -80,4 +80,12 @@ The following code snippet shows the structure of a Cloud IAM policy.
    ]
 }
 ```
+
+#### Policy hierarchy <a id="policy_hierarchy"></a>
+
+You can set a Cloud IAM policy at any level in the resource hierarchy: the organization level, the folder level, the project level, or the resource level. Resources inherit the policies of the parent resource. If you set a policy at the organization level, it is automatically inherited by all its children projects, and if you set a policy at the project level, it's inherited by all its child resources. The effective policy for a resource is the union of the policy set at that resource and the policy inherited from higher up in the hierarchy.
+
+The Cloud IAM policy hierarchy follows the same path as the GCP resource hierarchy. If you change the resource hierarchy, the policy hierarchy changes as well. For example, moving a project into an organization will update the project's Cloud IAM policy to inherit from the organization's Cloud IAM policy.
+
+Child policies cannot restrict access granted at a higher level.
 
