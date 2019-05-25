@@ -46,49 +46,6 @@ A role is a collection of permissions. You cannot assign a permission to the use
 
  You can grant roles to users by creating a _Cloud IAM policy_, which is a collection of statements that define who has what type of access. A policy is attached to a resource and is used to enforce access control whenever that resource is accessed.
 
-![IAM policy](../../.gitbook/assets/image%20%289%29.png)
-
- A Cloud IAM policy is represented by the IAM `Policy` object. An IAM `Policy` object consists of a list of bindings. A `Binding` binds a list of `members` to a `role`.
-
-`role` is the role you want to assign to the member. The `role` is specified in the form of `roles/<name of the role>`. For example, `roles/storage.objectAdmin`, `roles/storage.objectCreator`, and `roles/storage.objectViewer`.
-
-`members` contains a list of one or more identities as described in the [Concepts related to identity](https://cloud.google.com/iam/docs/overview#concepts_related_identity) section above. 
-
-The Cloud IAM methods are:
-
-* `setIamPolicy()`: Allows you to set policies on your resources.
-* `getIamPolicy()`: Allows you to get a policy that was previously set.
-* `testIamPermissions()`: Allows you to test whether the caller has the specified permissions for a resource.
-
-The following code snippet shows the structure of a Cloud IAM policy.
-
-```text
-{
-  "bindings": [
-   {
-     "role": "roles/storage.objectAdmin",
-     "members": [
-       "user:alice@example.com",
-       "serviceAccount:my-other-app@appspot.gserviceaccount.com",
-       "group:admins@example.com",
-       "domain:google.com" ]
-   },
-   {
-     "role": "roles/storage.objectViewer",
-     "members": ["user:bob@example.com"]
-   }
-   ]
-}
-```
-
-#### Policy hierarchy <a id="policy_hierarchy"></a>
-
-You can set a Cloud IAM policy at any level in the resource hierarchy: the organization level, the folder level, the project level, or the resource level. Resources inherit the policies of the parent resource. If you set a policy at the organization level, it is automatically inherited by all its children projects, and if you set a policy at the project level, it's inherited by all its child resources. The effective policy for a resource is the union of the policy set at that resource and the policy inherited from higher up in the hierarchy.
-
-The Cloud IAM policy hierarchy follows the same path as the GCP resource hierarchy. If you change the resource hierarchy, the policy hierarchy changes as well. For example, moving a project into an organization will update the project's Cloud IAM policy to inherit from the organization's Cloud IAM policy.
-
-Child policies cannot restrict access granted at a higher level.
-
 ## Cloud Platform resource hierarchy
 
 IAM allows you to set policies at the following levels of the resource hierarchy:

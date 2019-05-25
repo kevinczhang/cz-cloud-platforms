@@ -5,6 +5,7 @@
   * [Cloud IAM](google-cloud-sdk/cloud-iam/README.md)
     * [Role](google-cloud-sdk/cloud-iam/role.md)
     * [Service accounts](google-cloud-sdk/cloud-iam/service-accounts.md)
+    * [Policy](google-cloud-sdk/cloud-iam/policy.md)
     * [Commands](google-cloud-sdk/cloud-iam/commands.md)
   * [Cloud Billing](google-cloud-sdk/cloud-billing/README.md)
     * [Create and Link Billing Account](google-cloud-sdk/cloud-billing/create-and-link-billing-account.md)
