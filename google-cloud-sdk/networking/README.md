@@ -1,4 +1,12 @@
+---
+description: >-
+  While App Engine manages networking for you, and Kubernetes Engine uses the
+  Kubernetes model, Compute Engine provides a set of networking services.
+---
+
 # Networking
+
+These services help you to load-balance traffic across resources, create DNS records, and connect your existing network to Google's network.
 
 ## What is BBR?
 
