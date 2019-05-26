@@ -28,3 +28,5 @@ Your vCPU and memory usage for each of these categories can receive one of the f
 * [Committed use discounts](https://cloud.google.com/compute/docs/instances/signing-up-committed-use-discounts)
 * [Discounts for preemptible VM instances](https://cloud.google.com/compute/docs/instances/preemptible)
 
+Discount types cannot be combined. Preemptible VM instances cannot receive sustained use discounts or committed use discounts.
+

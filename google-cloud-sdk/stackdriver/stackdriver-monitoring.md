@@ -8,9 +8,7 @@ description: >-
 
 ## Workspace 
 
-{% hint style="info" %}
- **Note:** "Stackdriver accounts" have been renamed "Workspaces" to reflect their use as a "single pane of glass" through which you view resources from multiple Google Cloud Platform \(GCP\) projects and Amazon Web Services \(AWS\) accounts. There is no change in their functionality.
-{% endhint %}
+> **Note:** "Stackdriver accounts" have been renamed "Workspaces" to reflect their use as a "single pane of glass" through which you view resources from multiple Google Cloud Platform \(GCP\) projects and Amazon Web Services \(AWS\) accounts. There is no change in their functionality.
 
 To use Monitoring, you must have a Workspace.
 
