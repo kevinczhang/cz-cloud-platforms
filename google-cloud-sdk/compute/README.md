@@ -52,3 +52,139 @@ When you build on Compute Engine, you can:
 * Attach and detach [disks](https://cloud.google.com/compute/docs/disks) as needed.
 * [Use SSH to connect](https://cloud.google.com/compute/docs/instances/connecting-to-instance) directly to your instances.
 
+
+
+### Comparing options <a id="comparing_options"></a>
+
+Google offers options for platform-as-a-service \(PaaS\), containers, and infrastructure-as-a-service \(IaaS\). The following table lists and describes the options:
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Product</th>
+      <th style="text-align:left">Your needs</th>
+      <th style="text-align:left">Product features</th>
+      <th style="text-align:left">Typical use cases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p><a href="https://cloud.google.com/appengine/"><img src="https://cloud.google.com/images/appengine-icon-54x48.png" alt="Google App Engine"/></a> 
+          <br
+          /><a href="https://cloud.google.com/appengine/"><b>Google App Engine</b></a>
+        </p>
+        <p>A flexible, zero ops platform for building highly available apps</p>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>You want to <b>focus on writing code</b>, and never want to touch a server,
+            cluster, or infrastructure.</li>
+          <li>You want to build a <b>highly reliable and scalable serving app or component</b>without
+            doing it all yourself.</li>
+          <li>You value <b>developer velocity</b> over infrastructure control.</li>
+          <li>You want to <b>minimize operational overhead</b>.</li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>A range of curated serving stacks with smart defaults and deep customizability.</li>
+          <li>Support for Java, Python, PHP, Go, Ruby, Node.js, and ASP.NET Core (beta)
+            ... or bring your own app runtime.</li>
+          <li>Integrated SDK, managed services, and local development environment.</li>
+          <li>App versioning with zero-downtime upgrades.</li>
+          <li>Traffic splitting.</li>
+          <li>Automatic high availability with built-in auto-scaling.</li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>Web sites.</li>
+          <li>Mobile app and gaming backends.</li>
+          <li>RESTful APIs.</li>
+          <li>Internal Line of Business (LOB) apps.</li>
+          <li>Internet of things (IoT) apps.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><a href="https://cloud.google.com/kubernetes-engine/"><img src="https://cloud.google.com/images/container-icon-54x48.png" alt="Google Kubernetes Engine"/></a> 
+          <br
+          /><a href="https://cloud.google.com/kubernetes-engine/"><b>Google Kubernetes Engine</b></a>
+        </p>
+        <p>Logical infrastructure powered by <a href="http://kubernetes.io/">Kubernetes</a>,
+          the open source container orchestration system.</p>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>You want to <b>increase velocity and improve operability dramatically</b> by
+            separating the app from the OS.</li>
+          <li>You need a secure, scalable way to <b>manage containers in production.</b>
+          </li>
+          <li>You <b>don&#x2019;t have dependencies on a specific operating system.</b>
+          </li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>Logical infrastructure - focus on your app components, not virtual machines.</li>
+          <li>Easy mechanisms for building loosely-coupled distributed systems.</li>
+          <li>Run the same application on your laptop, on premise and in the cloud.</li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>Containerized workloads.</li>
+          <li>Cloud-native distributed systems.</li>
+          <li>Hybrid applications.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><a href="https://cloud.google.com/compute/"><img src="https://cloud.google.com/images/compute-icon-54x48.png" alt="Google Compute Engine"/></a> 
+          <br
+          /><a href="https://cloud.google.com/compute/"><b>Google Compute Engine</b></a>
+        </p>
+        <p>Virtual machines running in Google&apos;s global data center network</p>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>You need complete control</b> over your infrastructure and direct access
+            to high-performance hardware such as GPUs and local SSDs.</li>
+          <li><b>You need to make OS-level changes</b>, such as providing your own network
+            or graphic drivers, to squeeze out the last drop of performance.</li>
+          <li>You want to move your application from your own colo or datacenter to
+            the cloud without rewriting it.</li>
+          <li>You need to run a software package that can&#x2019;t easily be containerized
+            or you <b>want to use existing VM images</b>.</li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>Virtual machines with network-attached and ultra-high performance local
+            storage options.</li>
+          <li>Preemptible virtual machines for inexpensive batch jobs and fault-tolerant
+            workloads.</li>
+          <li>Customizable load-balancing and auto-scaling across homogeneous VMs.</li>
+          <li>Direct access to GPUs that you can use to accelerate specific workloads.</li>
+          <li>Support for the most popular flavors of Linux and Windows operating systems.</li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>Any workload requiring a specific OS or OS configuration.</li>
+          <li>Currently deployed, on-premises software that you want to run in the cloud.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>### Combining multiple options <a id="combining_multiple_options"></a>
+
+You don't need to restrict yourself to a single computing choice for your whole application. You can mix options, choosing the right approach for any application component and connect them together. For example, you can:
+
+* Use App Engine for the front end serving layer, while running Redis in Compute Engine.
+* Use Container Engine for a rendering microservice that uses Compute Engine VMs running Windows to do the actual frame rendering.
+* Use App Engine for your web front end, Cloud SQL as your database, and Container Engine for your big data processing.
+
