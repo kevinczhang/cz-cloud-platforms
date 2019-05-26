@@ -1,0 +1,29 @@
+{
+    "title": "Cloud computing platform",
+    "description": "Learning CCP",
+
+    "plugins": ["theme-api", "collapsible-menu"],
+
+    "pluginsConfig": {
+        "fontSettings": {
+            "theme": "night",
+            "family": "serif",
+            "size": 4
+        },
+        "theme-api": {
+            "theme": "dark"
+        }
+    },
+
+    "variables": {},
+
+    "links": {
+        "sharing": {
+            "google": null,
+            "facebook": null,
+            "twitter": null,
+            "weibo": null,
+            "all": null
+        }
+    }
+}
