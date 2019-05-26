@@ -35,3 +35,9 @@ Discount types cannot be combined. Preemptible VM instances cannot receive susta
 
  Sole-tenant nodes are physical Compute Engine servers dedicated to hosting only VM instances from your specific project. When you create nodes, you pay for the vCPU and memory that your node occupies as well as a 10% sole-tenancy premium on those resources. After you create the node, you can place your VM instances on that node. These instances run for no additional cost except for the cost of the instances' other resources such as [persistent disks](https://cloud.google.com/compute/pricing#persistentdisk) and [premium images](https://cloud.google.com/compute/pricing#premiumimages) that you use with your instances.
 
+## Instance uptime
+
+ Instance uptime is measured as the number of seconds between when you start an instance and when you stop an instance, the latter being when the instance state is `TERMINATED`.
+
+ The easiest way to determine the status of an instance is to use [`gcloud compute`](https://cloud.google.com/compute/docs/gcloud-compute/) with the `gcloud compute instances list` command or to visit the [Google Cloud Platform Console](https://console.cloud.google.com/).
+
