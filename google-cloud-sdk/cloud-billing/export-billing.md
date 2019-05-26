@@ -25,10 +25,8 @@ To enable billing export:
 
 If you use regular file export, you should be aware that regular file export captures a smaller dataset than export to BigQuery.
 
-
-
-* [Cloud Billing](https://cloud.google.com/billing/)
-* *  [Documentation](https://cloud.google.com/billing/docs/)
+* [Cloud Billing](https://cloud.google.com/billing/) 
+*  [Documentation](https://cloud.google.com/billing/docs/)
 
 ## Export Billing Data to BigQuery
 
