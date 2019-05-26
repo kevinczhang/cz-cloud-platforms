@@ -12,5 +12,11 @@ Container Registry is a single place for your team to manage Docker images, perf
 
 Cloud Source Repositories are private Git repositories hosted on Google Cloud Platform that feature fast, indexed code search across all your repositories.
 
+Each project you create in the GCP Console has an associated, [fully-featured Git repository](https://cloud.google.com/source-repositories/docs/) that is hosted on Cloud Platform. You can use this repository for collaborative development of any application or service. If you are using Stackdriver Debugger, you can use Cloud Source Repositories and related tools in the GCP Console to view debugging information alongside your code during application runtime.
+
+## Cloud Deployment Manager
+
+You can use [Deployment Manager](https://cloud.google.com/deployment-manager/overview) to help easily and consistently deploy system configurations that you define. You can create static or dynamic templates and then use the command-line interface to deploy and manage your resources. After your configuration is up and running, you can use Deployment Manager to update, delete, and monitor your setup.
+
 
 
