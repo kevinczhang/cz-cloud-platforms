@@ -16,6 +16,7 @@
     * [Application Performance Management](google-cloud-sdk/stackdriver/application-performance-management.md)
   * [Compute](google-cloud-sdk/compute/README.md)
     * [Compute Engine](google-cloud-sdk/compute/compute-engine/README.md)
+      * [Pricing](google-cloud-sdk/compute/compute-engine/pricing.md)
       * [VM Instances](google-cloud-sdk/compute/compute-engine/instances.md)
       * [Instance Groups](google-cloud-sdk/compute/compute-engine/instance-groups.md)
       * [Machine Types](google-cloud-sdk/compute/compute-engine/machine-types.md)
