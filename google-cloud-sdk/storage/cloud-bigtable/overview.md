@@ -14,7 +14,7 @@ Each row/column intersection can contain multiple _cells_, or versions, at diffe
 
 ## Cloud Bigtable architecture
 
-![Cloud Bigtable architecture](../../../.gitbook/assets/image%20%2839%29.png)
+![Cloud Bigtable architecture](../../../.gitbook/assets/image%20%2840%29.png)
 
 As the diagram illustrates, all client requests go through a front-end server before they are sent to a Cloud Bigtable node. ****The nodes are organized into a Cloud Bigtable cluster, which belongs to a Cloud Bigtable instance, a container for the cluster.
 

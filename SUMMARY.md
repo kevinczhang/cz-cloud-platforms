@@ -58,6 +58,7 @@
       * [gcloud projects](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-projects.md)
       * [gcloud iam](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-iam.md)
       * [gcloud services](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-services.md)
+      * [gcloud beta billing](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-beta-billing.md)
       * [gcloud compute](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-compute.md)
       * [gcloud pubsub](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-pubsub.md)
       * [gcloud bigtable](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-bigtable.md)

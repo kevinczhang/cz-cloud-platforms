@@ -1,8 +1,30 @@
+---
+description: >-
+  This section contains information on setting up and managing your billing
+  account. It also describes the Google Cloud Billing API.
+---
+
 # Cloud Billing
+
+## Resource Overview
+
+#### What is a resource? <a id="what_is_a_resource"></a>
+
+In the context of GCP, resource can refer to the service-level resources that are used to process your workloads \(VMs, DBs, and so on\) as well as to the account-level resources that sit above the services, such as projects, folders, and the organization.
+
+#### What is resource management? <a id="what_is_resource_management"></a>
+
+Resource management is focused on how you should configure and grant access to the various Cloud resources for your company/team, specifically the setup and organization of the account-level resources that sit above the service-level resources. Account-level resources are the resources involved in setting up and administering your GCP account.
+
+#### Resource Hierarchy <a id="gcp_resource_hierarchy_overview"></a>
+
+GCP resources are organized hierarchically. This hierarchy allows you to map your organization's operational structure to GCP, and to manage access control and permissions for groups of related resources.
+
+![](../../.gitbook/assets/image%20%2836%29.png)
 
 ## Billing account & payments profile
 
-A **billing account** is set up in GCP and is used to define who pays for a given set of GCP resources. [Access control to a billing account](https://cloud.google.com/billing/docs/how-to/billing-access) is established by Cloud Identity and Access Management \(IAM\) roles. A billing account is connected to a[**Google payments profile**](https://support.google.com/paymentscenter/topic/9017382?ref_topic=9037778) that includes a payment instrument to which costs are charged.
+A **billing account** is set up in GCP and is used to define who pays for a given set of GCP resources. [Access control to a billing account](https://cloud.google.com/billing/docs/how-to/billing-access) is established by Cloud Identity and Access Management \(IAM\) roles. A billing account is connected to a [**Google payments profile**](https://support.google.com/paymentscenter/topic/9017382?ref_topic=9037778) that includes a payment instrument to which costs are charged.
 
 ### Billing account types
 
