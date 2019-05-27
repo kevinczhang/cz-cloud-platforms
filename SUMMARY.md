@@ -21,7 +21,7 @@
       * [Instance Groups](google-cloud-sdk/compute/compute-engine/instance-groups.md)
       * [Machine Types](google-cloud-sdk/compute/compute-engine/machine-types.md)
     * [Kubernetes Engine](google-cloud-sdk/compute/kubernetes-engine/README.md)
-      * [Common Commands](google-cloud-sdk/compute/kubernetes-engine/common-commands.md)
+      * [Deploying a container application](google-cloud-sdk/compute/kubernetes-engine/common-commands.md)
       * [Cluster](google-cloud-sdk/compute/kubernetes-engine/cluster.md)
       * [Workloads on GKE](google-cloud-sdk/compute/kubernetes-engine/workloads-on-gke.md)
       * [Security](google-cloud-sdk/compute/kubernetes-engine/security.md)
