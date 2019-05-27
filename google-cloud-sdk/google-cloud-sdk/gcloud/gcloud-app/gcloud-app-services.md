@@ -16,6 +16,26 @@ description: >-
 * [`list`](https://cloud.google.com/sdk/gcloud/reference/app/services/list)List your existing services.
 * [`set-traffic`](https://cloud.google.com/sdk/gcloud/reference/app/services/set-traffic)Set traffic splitting settings.
 
+## Browse services
+
+To show version `v1` of service `myService` in the browser, run:
+
+```text
+  $ gcloud app services browse myService --version="v1"
+```
+
+To show multiple services side-by-side, run:
+
+```text
+  $ gcloud app services browse default otherService
+```
+
+To show multiple services side-by-side with a specific version, run:
+
+```text
+  $ gcloud app services browse s1 s2 --version v1
+```
+
 To list your deployed services, run:
 
 ```text
