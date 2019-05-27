@@ -1,4 +1,16 @@
+---
+description: >-
+  The gcloud compute command group lets you create, configure and manipulate
+  Google Compute Engine virtual machines.
+---
+
 # gcloud compute
+
+With Compute Engine you can create and run virtual machines on Google infrastructure. Compute Engine offers scale, performance, and value that allows you to easily launch large compute clusters on Google's infrastructure.
+
+ `gcloud compute` [`GROUP`](https://cloud.google.com/sdk/gcloud/reference/compute/#GROUP) \| [`COMMAND`](https://cloud.google.com/sdk/gcloud/reference/compute/#COMMAND) \[[`GCLOUD_WIDE_FLAG`](https://cloud.google.com/sdk/gcloud/reference/compute/#GCLOUD-WIDE-FLAGS) `…`\]
+
+
 
 ## gcloud compute networks
 

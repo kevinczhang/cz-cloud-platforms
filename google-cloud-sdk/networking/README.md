@@ -34,3 +34,5 @@ If your website or application is running on Compute Engine, the time might come
 
 You can publish and maintain [Domain Name System \(DNS\)](https://cloud.google.com/dns/docs/) records by using the same infrastructure that Google uses. You can use the Google Cloud Platform Console, the command line, or a REST API to work with managed zones and DNS records.
 
+DNS is a hierarchical distributed database that lets you store IP addresses and other data, and look them up by name. Cloud DNS lets you publish your zones and records in the DNS without the burden of managing your own DNS servers and software.
+
