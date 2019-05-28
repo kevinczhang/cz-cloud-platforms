@@ -4,7 +4,7 @@ description: >-
   command line.
 ---
 
-# gsutil Tool
+# gsutil for cloudStorage
 
 You can use gsutil to do a wide range of bucket and object management tasks, including:
 
