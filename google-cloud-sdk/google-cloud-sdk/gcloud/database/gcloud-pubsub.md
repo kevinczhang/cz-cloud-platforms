@@ -1,4 +1,16 @@
+---
+description: 'Manage Cloud Pub/Sub topics, subscriptions, and snapshots.'
+---
+
 # gcloud pubsub
+
+`gcloud pubsub` [`GROUP`](https://cloud.google.com/sdk/gcloud/reference/pubsub/#GROUP) \[[`GCLOUD_WIDE_FLAG`](https://cloud.google.com/sdk/gcloud/reference/pubsub/#GCLOUD-WIDE-FLAGS) `…`\]
+
+`GROUP` is one of the following:
+
+* [`snapshots`](https://cloud.google.com/sdk/gcloud/reference/pubsub/snapshots)Manage Cloud Pub/Sub snapshots.
+* [`subscriptions`](https://cloud.google.com/sdk/gcloud/reference/pubsub/subscriptions)Manage Cloud Pub/Sub subscriptions.
+* [`topics`](https://cloud.google.com/sdk/gcloud/reference/pubsub/topics)Manage Cloud Pub/Sub topics.
 
 This self-contained example, meant to run in bash or the Cloud Shell, shows the steps required:
 

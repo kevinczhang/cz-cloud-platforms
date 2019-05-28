@@ -14,22 +14,6 @@ description: Command groups for Cloud Spanner.
 * [`operations`](https://cloud.google.com/sdk/gcloud/reference/spanner/operations)Manage Cloud Spanner operations.
 * [`rows`](https://cloud.google.com/sdk/gcloud/reference/spanner/rows)Manage the rows in Cloud Spanner databases.
 
-## gcloud spanner instances - manage Cloud Spanner instances
-
-`gcloud spanner instances` [`COMMAND`](https://cloud.google.com/sdk/gcloud/reference/spanner/instances/#COMMAND) \[[`GCLOUD_WIDE_FLAG`](https://cloud.google.com/sdk/gcloud/reference/spanner/instances/#GCLOUD-WIDE-FLAGS) `…`\]
-
-`COMMAND` is one of the following:
-
-* [`add-iam-policy-binding`](https://cloud.google.com/sdk/gcloud/reference/spanner/instances/add-iam-policy-binding)Add IAM policy binding to a Cloud Spanner instance.
-* [`create`](https://cloud.google.com/sdk/gcloud/reference/spanner/instances/create)Create a Cloud Spanner instance.
-* [`delete`](https://cloud.google.com/sdk/gcloud/reference/spanner/instances/delete)Delete a Cloud Spanner instance.
-* [`describe`](https://cloud.google.com/sdk/gcloud/reference/spanner/instances/describe)Describe a Cloud Spanner instance.
-* [`get-iam-policy`](https://cloud.google.com/sdk/gcloud/reference/spanner/instances/get-iam-policy)Get the IAM policy for a Cloud Spanner instance.
-* [`list`](https://cloud.google.com/sdk/gcloud/reference/spanner/instances/list)List the Cloud Spanner instances in this project.
-* [`remove-iam-policy-binding`](https://cloud.google.com/sdk/gcloud/reference/spanner/instances/remove-iam-policy-binding)Remove IAM policy binding of a Cloud Spanner instance.
-* [`set-iam-policy`](https://cloud.google.com/sdk/gcloud/reference/spanner/instances/set-iam-policy)Set the IAM policy for a Cloud Spanner instance.
-* [`update`](https://cloud.google.com/sdk/gcloud/reference/spanner/instances/update)Update a Cloud Spanner instance.
-
 ## gcloud spanner databases - manage Cloud Spanner databases
 
 `gcloud spanner databases` [`GROUP`](https://cloud.google.com/sdk/gcloud/reference/spanner/databases/#GROUP) \| [`COMMAND`](https://cloud.google.com/sdk/gcloud/reference/spanner/databases/#COMMAND) \[[`GCLOUD_WIDE_FLAG`](https://cloud.google.com/sdk/gcloud/reference/spanner/databases/#GCLOUD-WIDE-FLAGS) `…`\]
