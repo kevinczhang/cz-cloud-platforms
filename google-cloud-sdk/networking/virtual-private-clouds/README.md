@@ -18,15 +18,7 @@ A VPC network is a global resource which consists of a list of regional virtual 
 * VPC networks only support IPv4 [unicast](https://wikipedia.org/wiki/Unicast) traffic. They do **not** support [broadcast](https://wikipedia.org/wiki/Broadcasting_%28networking%29), [multicast](https://wikipedia.org/wiki/IP_multicast), or IPv6 traffic _within_ the network: VMs in the VPC network can only send to IPv4 destinations and only receive traffic from IPv4 sources. It is possible to create an IPv6 address for a [global load balancer](https://cloud.google.com/load-balancing/docs/ipv6), however.
 * Flow logs capture information about the IP traffic going to and from network interfaces on Google Compute Engine. VPC flow logs help with network monitoring, forensics, real-time security analysis and expense optimization. GCP flow logs are updated every 5-seconds, providing immediate visibility.
 
-#### Routes <a id="routes"></a>
-
-Routes tell VM instances and the VPC network how to send traffic from an instance to a destination, either inside the network or outside of GCP. Each VPC network comes with some [system generated routes](https://cloud.google.com/vpc/docs/vpc#system-generated-routes) to route traffic among its subnets and send traffic from [eligible instances](https://cloud.google.com/vpc/docs/vpc#internet_access_reqs) to the Internet.
-
-#### Forwarding rules <a id="forwarding_rules"></a>
-
-While routes govern traffic leaving an instance, forwarding rules direct traffic _to_ a GCP resource in a VPC network based on IP address, protocol, and port.
-
-Some forwarding rules direct traffic from outside of GCP to a destination in the network; others direct traffic from inside the network. Destinations for forwarding rules are target instances, load balancer targets \(target proxies, target pools, and backend services\), and VPN gateways.
+####  <a id="routes"></a>
 
 ## Types of VPC
 
@@ -80,6 +72,21 @@ Every subnet has four reserved IP addresses in its primary IP range. There are n
 #### IP addresses <a id="ip_addresses"></a>
 
 GCP resources, such as Compute Engine VM instances, forwarding rules, GKE containers, and App Engine, rely on IP addresses to communicate.
+
+### Types of IP Addresses
+
+#### Internal IP Address
+
+* Allocated from subnet range to VM by DHCP
+* DHCP reservation is renewed every 25 hours
+* VM Name + IP is registered with network scoped DNS
+* Static IP stays with VM until VM is removed and ephemeral IP is attached to vm/forwarding rules and only stays until VM is stopped or restarted or instance is terminated.
+
+#### External IP Address
+
+* Assigned from pool \(ephemeral\). If you turn off & on machine - you get new IP.
+* Reserved \(Static\) - Billed when not attached to running VM
+* VM doesn't know External IP, it is mapped to the internal IP.
 
 #### Alias IP ranges <a id="alias_ip_ranges"></a>
 

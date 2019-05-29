@@ -53,3 +53,14 @@ Create a new record to point the domain to an external IP address.
 * If your IP address is in the form `#.#.#.#`, you have an IPv4 address and need to create an `A` record. 
 * If your IP address is in the format `#:#:#:#:#:#:#:#`, you have an IPv6 address and need to create an `AAAA` record.
 
+## Supported DNS record types
+
+| Record type | Description |
+| :--- | :--- |
+| `A` | Address record, which is used to map host names to their IPv4 address. |
+| `AAAA` | IPv6 Address record, which is used to map host names to their IPv6 address. |
+| `CAA` | Certificate Authority \(CA\) Authorization, which is used to specify which CAs are allowed to create certificates for a domain. |
+| `CNAME` | Canonical name record, which is used to specify alias names. Cloud DNS does not support resolving CNAMEs recursively across different managed private zones \(CNAME chasing\). Refer to [troubleshooting](https://cloud.google.com/dns/docs/troubleshooting#cname_record_defined_in_a_private_zone_is_not_working) for details. |
+| NS | Name server record, which delegates a DNS zone to an authoritative server. |
+| SOA |  Start of authority record, which specifies authoritative information about a DNS zone. An `SOA` resource record is created for you when you create your managed zone. You can modify the record as needed \(for example, you can change the serial number to an arbitrary number to support date-based versioning\). |
+
