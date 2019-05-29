@@ -2,7 +2,7 @@
 
 A VPC network is a global resource which consists of a list of regional virtual subnetworks \(subnets\) in data centers, all connected by a global wide area network. VPC networks are logically isolated from each other in GCP.
 
-![](../../.gitbook/assets/image%20%2832%29.png)
+![](../../../.gitbook/assets/image%20%2832%29.png)
 
 ## VPC networks have the following properties:
 
@@ -18,10 +18,6 @@ A VPC network is a global resource which consists of a list of regional virtual 
 * VPC networks only support IPv4 [unicast](https://wikipedia.org/wiki/Unicast) traffic. They do **not** support [broadcast](https://wikipedia.org/wiki/Broadcasting_%28networking%29), [multicast](https://wikipedia.org/wiki/IP_multicast), or IPv6 traffic _within_ the network: VMs in the VPC network can only send to IPv4 destinations and only receive traffic from IPv4 sources. It is possible to create an IPv6 address for a [global load balancer](https://cloud.google.com/load-balancing/docs/ipv6), however.
 * Flow logs capture information about the IP traffic going to and from network interfaces on Google Compute Engine. VPC flow logs help with network monitoring, forensics, real-time security analysis and expense optimization. GCP flow logs are updated every 5-seconds, providing immediate visibility.
 
-#### Firewall rules <a id="firewall_rules"></a>
-
-Each VPC network implements a distributed virtual firewall that you can configure. Firewall rules allow you to control which packets are allowed to travel to which destinations. Every VPC network has two [implied firewall rules](https://cloud.google.com/vpc/docs/firewalls#default_firewall_rules) that block all incoming connections and allow all outgoing connections.
-
 #### Routes <a id="routes"></a>
 
 Routes tell VM instances and the VPC network how to send traffic from an instance to a destination, either inside the network or outside of GCP. Each VPC network comes with some [system generated routes](https://cloud.google.com/vpc/docs/vpc#system-generated-routes) to route traffic among its subnets and send traffic from [eligible instances](https://cloud.google.com/vpc/docs/vpc#internet_access_reqs) to the Internet.
@@ -31,6 +27,40 @@ Routes tell VM instances and the VPC network how to send traffic from an instanc
 While routes govern traffic leaving an instance, forwarding rules direct traffic _to_ a GCP resource in a VPC network based on IP address, protocol, and port.
 
 Some forwarding rules direct traffic from outside of GCP to a destination in the network; others direct traffic from inside the network. Destinations for forwarding rules are target instances, load balancer targets \(target proxies, target pools, and backend services\), and VPN gateways.
+
+## Types of VPC
+
+#### Default VPC
+
+Unless you choose to disable it, each new project starts with a `default` network. The `default` network is an auto mode network with [pre-populated firewall rules](https://cloud.google.com/vpc/docs/firewalls#default_firewall_rules). You can disable the creation of default networks by [creating an organization policy](https://cloud.google.com/resource-manager/docs/organization-policy/creating-managing-policies) with the [`compute.skipDefaultNetworkCreation` constraint](https://cloud.google.com/resource-manager/docs/organization-policy/org-policy-constraints). Projects that inherit this policy won't have a default network.
+
+* Subnets created per region/zone.
+* Internet gateway also created.
+* Firewalls are opened between subnets so that all resources can communicate.
+
+#### Auto VPC
+
+* Single subnet per region
+* Fixed /20 subnets
+* Expandable up to /16
+* Default Network is auto mode
+* Predefined IP range
+
+#### Custom VPC
+
+* No default subnets
+* Manually created subnets can use any value RFC1918 IP range
+* Ranges do not have to be contiguous between subnets
+* Full controls of IP ranges
+
+## Reserved Addresses
+
+| Reserved Address | Description | Example |
+| :--- | :--- | :--- |
+| Network | First address in the primary IP range for the subnet | `10.1.2.0` in `10.1.2.0/24` |
+| Default gateway | Second address in the primary IP range for the subnet | `10.1.2.1` in `10.1.2.0/24` |
+| Second-to-last address | Second-to-last address in the primary IP range for the subnet that is reserved by GCP for potential future use | `10.1.2.254` in `10.1.2.0/24` |
+| Broadcast | Last address in the primary IP range for the subnet | `10.1.2.255` in `10.1.2.0/24` |
 
 ## Interfaces and IP Addresses
 
@@ -45,16 +75,6 @@ If you have multiple services running on a single VM instance, you can give each
 #### Multiple Network Interfaces <a id="multiple_network_interfaces"></a>
 
 You can add multiple network interfaces to a VM instance, where each interface resides in a unique VPC network. Multiple network interfaces enable a network appliance VM to act as a gateway for securing traffic among different VPC networks or to and from the Internet.
-
-## VPC sharing and peering
-
-#### Shared VPC <a id="shared_vpc"></a>
-
-You can share a VPC network from one project \(called a host project\) to other projects in your GCP organization. 
-
-#### VPC Network Peering <a id="vpc_network_peering"></a>
-
-VPC Network Peering allows you to build SaaS \([Software-as-a-Service](https://wikipedia.org/wiki/Software_as_a_service)\) ecosystems in GCP, making services available privately across different VPC networks, whether the networks are in the same project, different projects, or projects in different organizations.
 
 ## Hybrid Cloud
 
