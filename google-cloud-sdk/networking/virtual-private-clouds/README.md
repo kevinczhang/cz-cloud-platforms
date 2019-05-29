@@ -55,12 +55,25 @@ Unless you choose to disable it, each new project starts with a `default` networ
 
 ## Reserved Addresses
 
+Every subnet has four reserved IP addresses in its primary IP range. There are no reserved IP addresses in the [secondary IP ranges](https://cloud.google.com/vpc/docs/alias-ip).
+
 | Reserved Address | Description | Example |
 | :--- | :--- | :--- |
 | Network | First address in the primary IP range for the subnet | `10.1.2.0` in `10.1.2.0/24` |
 | Default gateway | Second address in the primary IP range for the subnet | `10.1.2.1` in `10.1.2.0/24` |
 | Second-to-last address | Second-to-last address in the primary IP range for the subnet that is reserved by GCP for potential future use | `10.1.2.254` in `10.1.2.0/24` |
 | Broadcast | Last address in the primary IP range for the subnet | `10.1.2.255` in `10.1.2.0/24` |
+
+## Subnets
+
+* VPC contains subnetworks
+* Subnets are Region Specific
+* Subnet can be in single zone or multiple zone within the region
+* Using Subnetworks we can apply single firewall rules all VMs even if they are in different zones
+* You can create multiple subnets within single region/zone to isolated resources based on different business needs.
+* Each Subnet has contiguous private RFC1918 IP Space - IP Range
+* **VM instances in a VPC network can communicate with instances in all other subnets of the same VPC network, regardless of region using their RFC1918 private IP addresses.**
+* You can isolate portions of the network, even entire subnets, using firewalls.
 
 ## Interfaces and IP Addresses
 
