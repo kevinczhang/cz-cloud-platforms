@@ -163,3 +163,56 @@ To list all user-managed keys created before noon on July 19th, 2015 \(to perfor
       --created-before 2015-07-19T12:00:00Z
 ```
 
+## Grant or revoke role
+
+**To grant a role:**
+
+```text
+gcloud [GROUP] add-iam-policy-binding [RESOURCE-NAME]
+  --member user:[USER-EMAIL] --role [ROLE-ID]
+```
+
+**To revoke a role:**
+
+```text
+gcloud [GROUP] remove-iam-policy-binding [RESOURCE-NAME]
+  --member user:[EMAIL] --role [ROLE-ID]
+```
+
+\[GROUP\] is the `gcloud` group for the resource you want to grant permissions for, such as `projects` or `organizations`. \[RESOURCE\] is the name of the resource. \[EMAIL\] is the user to grant the role to. \[ROLE-ID\] is the ID of the role to grant.
+
+The example below grants the Viewer role to _user-1@gmail.com_ for the project _my-project_ \(note that you can only add Owner role to a project through the console\)
+
+```text
+gcloud projects add-iam-policy-binding my-project
+  --member user:user-1@gmail.com --role roles/viewer
+```
+
+## Cloud IAM policy
+
+#### Get policy <a id="get_policy"></a>
+
+```text
+gcloud projects get-iam-policy [PROJECT] --format [FORMAT] > [FILE-PATH]
+```
+
+\[PROJECT\] is the name of the project. \[FORMAT\] is either JSON or YAML. \[FILE-PATH\] is the path on disk to save the policy.
+
+For example, the following gets the policy for the project _my-project_ in JSON format and saves it to the user's home directory.
+
+```text
+gcloud projects get-iam-policy my-project --format json > ~/policy.json
+```
+
+#### Set policy <a id="set_policy"></a>
+
+Execute the [`set-iam-policy`](https://cloud.google.com/sdk/gcloud/reference/projects/set-iam-policy) command with the path to the JSON file containing the updated policy:
+
+```text
+gcloud projects set-iam-policy [PROJECT] [FILE-PATH]
+```
+
+As with `get-iam-policy`, \[PROJECT\] is the name of the project to set policy for. \[FILE-PATH\] is the path to the file that contains the new policy.
+
+The response will be the updated policy.
+
