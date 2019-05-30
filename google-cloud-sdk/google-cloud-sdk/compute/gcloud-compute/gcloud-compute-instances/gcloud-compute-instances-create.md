@@ -15,8 +15,6 @@ When an instance is in RUNNING state and the system begins to boot, the instance
 
 ## FLAGS
 
-{% embed url="https://cloud.google.com/sdk/gcloud/reference/compute/instances/create" %}
-
 * `--boot-disk-auto-delete:` Automatically delete boot disks when their instances are deleted. Enabled by default, use `--no-boot-disk-auto-delete` to disable.
 * `--boot-disk-device-name`=`BOOT_DISK_DEVICE_NAME:`The name the guest operating system will see for the boot disk. This option can only be specified if a new boot disk is being created \(as opposed to mounting an existing persistent disk\).
 * `--boot-disk-type`=`BOOT_DISK_TYPE:`The type of the boot disk. This option can only be specified if a new boot disk is being created \(as opposed to mounting an existing persistent disk\). To get a list of available disk types, run `$` [`gcloud compute disk-types list`](https://cloud.google.com/sdk/gcloud/reference/compute/disk-types/list).
