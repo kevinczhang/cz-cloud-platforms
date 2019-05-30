@@ -35,6 +35,16 @@ description: >-
 * [`list-tags`](https://cloud.google.com/sdk/gcloud/reference/container/images/list-tags)List tags and digests for the specified image.
 * [`untag`](https://cloud.google.com/sdk/gcloud/reference/container/images/untag)Remove existing image tags.
 
+#### Steps to push image to register
+
+1. **gcloud auth configure-docker** -q
+2. **docker build -t** la-ace-products:0.1 -f "$\(dirname "$0"\)/Dockerfile" "$\(dirname "$0"\)/../"
+3. **docker tag** la-ace-products:0.1 "gcr.io/$PROJECT\_NAME/products"
+4. **docker push** "gcr.io/$PROJECT\_NAME/products"
+5. **Authenticate kubectl**
+
+   **gcloud container clusters get-credentials** $PRODUCT\_CLUSTER\_NAME --zone $PROJECT\_ZONE --project $PROJECT\_NAME
+
 ### gcloud container node-pools - create and delete operations for Google Kubernetes Engine node pools
 
 `gcloud container node-pools` [`COMMAND`](https://cloud.google.com/sdk/gcloud/reference/container/node-pools/#COMMAND) \[[`--region`](https://cloud.google.com/sdk/gcloud/reference/container/node-pools/#--region)=`REGION`     \| [`--zone`](https://cloud.google.com/sdk/gcloud/reference/container/node-pools/#--zone)=`ZONE`, [`-z`](https://cloud.google.com/sdk/gcloud/reference/container/node-pools/#-z) [`ZONE`](https://cloud.google.com/sdk/gcloud/reference/container/node-pools/#ZONE)\]\[[`GCLOUD_WIDE_FLAG`](https://cloud.google.com/sdk/gcloud/reference/container/node-pools/#GCLOUD-WIDE-FLAGS) `…`\]
