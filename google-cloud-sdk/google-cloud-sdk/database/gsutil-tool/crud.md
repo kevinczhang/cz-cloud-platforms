@@ -105,7 +105,9 @@ You can use the gsutil mv command to rename subdirectories. For example, the com
 gsutil mv gs://my_bucket/olddir gs://my_bucket/newdir
 ```
 
-## rb - Remove buckets
+## Deletion
+
+### rb - Remove buckets
 
 ```text
 gsutil rb [-f] url...
@@ -113,7 +115,7 @@ gsutil rb [-f] url...
 
 The rb command deletes a bucket. Buckets must be empty before you can delete them.
 
-## rm - Remove objects
+### rm - Remove objects
 
 The gsutil rm command removes objects and/or buckets. For example, the command:
 
@@ -129,7 +131,7 @@ gsutil rm gs://bucket/subdir/**
 
 will remove all objects under gs://bucket/subdir or any of its subdirectories.
 
-### Delete the files from your old bucket <a id="step_3_delete_the_files_from_your_old_bucket"></a>
+#### Delete the files from your old bucket
 
 Use the [`gsutil rm`](https://cloud.google.com/storage/docs/gsutil/commands/rm) command, with the `-r` option, to recursively delete all your files from the source bucket, as well as the source bucket itself. Replace `[VALUES_IN_BRACKETS]` with the appropriate values:
 
@@ -143,13 +145,23 @@ Or, to delete the files but keep the source bucket:
 gsutil rm -a gs://[SOURCE_BUCKET]/**
 ```
 
-## Changing the default storage class of a bucket
+### Changing the default storage class of a bucket
 
 Use the [`gsutil defstorageclass set`](https://cloud.google.com/storage/docs/gsutil/commands/defstorageclass) command with the desired [storage class](https://cloud.google.com/storage/docs/storage-classes), replacing `[VALUES_IN_BRACKETS]` with the appropriate values:
 
 ```text
 gsutil defstorageclass set [STORAGE_CLASS] gs://[BUCKET_NAME]
 ```
+
+### Changing object storage classes
+
+Use the `-s` flag in a [`rewrite`](https://cloud.google.com/storage/docs/gsutil/commands/rewrite) command. For example:
+
+```text
+gsutil rewrite -s [STORAGE_CLASS] gs://[PATH_TO_OBJECT]
+```
+
+Where `[STORAGE_CLASS]` is the new [storage class](https://cloud.google.com/storage/docs/storage-classes) for your object and `[PATH_TO_OBJECT]` is the name of the object whose class you're changing.
 
 
 
