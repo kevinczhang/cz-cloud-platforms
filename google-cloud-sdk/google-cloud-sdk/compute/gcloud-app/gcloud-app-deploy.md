@@ -14,7 +14,16 @@ The yaml files for the services or configurations you want to deploy. If not giv
 
 > Note, for Java Standard apps, you must add the path to the `appengine-web.xml` file inside the WEB-INF directory. gcloud app deploy skips files specified in the .gcloudignore file.
 
-### Examples
+## Setting Autoscaling Parameters
+
+If you use the Cloud SDK tooling to deploy your app, such as `gcloud app deploy`, you can set the following autoscaling parameters in the `app.yaml` configuration file:
+
+* `min_instances`
+* `max_instances`
+* `target_throughput_utilization`
+* `target_cpu_utilization`
+
+## Examples
 
  To deploy a single service, run:
 
