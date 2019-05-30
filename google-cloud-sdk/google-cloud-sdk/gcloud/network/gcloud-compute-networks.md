@@ -284,3 +284,39 @@ gcloud compute addresses create example-address-1 example-address-2 \
     --addresses 10.128.0.12,10.128.0.13
 ```
 
+## Locating the external and internal IP address for an instance
+
+To view the internal and external IP addresses for your instance using `gcloud compute`, use the [`instances list`](https://cloud.google.com/sdk/gcloud/reference/compute/instances/list) sub-command.
+
+```text
+gcloud compute instances list
+```
+
+Your output should resemble the following:
+
+```text
+NAME              ZONE            MACHINE_TYPE     PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP    STATUS
+hulk              us-central1-c   n1-ultramem-160  true         192.0.2.1                   RUNNING
+my-instance       us-central1-c   n1-standard-1                 192.51.100.1  203.224.0.113 RUNNING
+```
+
+To view the internal or external IP address for a specific instance using `gcloud compute`, use the [`instances describe`](https://cloud.google.com/sdk/gcloud/reference/compute/instances/describe) sub-command with a `--format` flag to filter the output. For example:
+
+* To view the internal IP for a specific instance, run the following command:
+
+  ```text
+  gcloud compute instances describe [INSTANCE_NAME] --format='get(networkInterfaces[0].networkIP)'
+
+  192.51.100.1
+  ```
+
+* To view the external IP for a specific instance, run the following command:
+
+  ```text
+
+  gcloud compute instances describe [INSTANCE_NAME] --format='get(networkInterfaces[0].accessConfigs[0].natIP)'
+  203.224.0.113
+  ```
+
+where `[INSTANCE_NAME]` is the name of the instance whose internal or external IP you want to view.
+
