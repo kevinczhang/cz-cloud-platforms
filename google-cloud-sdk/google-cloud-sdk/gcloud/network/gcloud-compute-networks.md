@@ -166,8 +166,6 @@ Replace the placeholders with valid values:
 
 #### Editing secondary ranges <a id="edit-secondary"></a>
 
-
-
 Add a new secondary IP range to a subnet using the following `gcloud` command:
 
 ```text
@@ -219,4 +217,70 @@ gcloud compute networks delete NETWORK_NAME
 You can enable logging of network flows to and from VMs. See [Using VPC Flow Logs](https://cloud.google.com/vpc/docs/using-flow-logs) for instructions.
 
 You can enable logging for firewall rules to see which rules allowed or blocked which traffic. See [Using Firewall Rules Logging](https://cloud.google.com/vpc/docs/using-firewall-rules-logging) for instructions.
+
+## Reserving a new static external IP address
+
+To reserve a new static external IP address using `gcloud compute`, use the [`addresses create`](https://cloud.google.com/sdk/gcloud/reference/compute/addresses/create) sub-command and specify whether you want to reserve a global or regional IP address:
+
+```text
+gcloud compute addresses create [ADDRESS_NAME] \
+    [--region [REGION] | --global ] \
+    [--ip-version [IPV4 | IPV6]]
+```
+
+where:
+
+* `[ADDRESS_NAME]` is the name you want to call this address.
+* If you are specifying a regional IP address, provide the desired `[REGION]` for the request. This should be the same region as the resource you want to attach the IP address to.
+* If it is a global IP address, specify the `--global` flag. If you want an IPv6 address, specify both `--global` and `--ip-version IPV6` flags. `IPv6` addresses can only be global and can only be used with global HTTP\(S\), SSL proxy, and TCP proxy load balancers.
+
+To assign a static external IP address, use the `--address` flag during instance creation and provide the static external IP address:
+
+```text
+gcloud compute instances create [INSTANCE_NAME] --address [IP_ADDRESS]
+```
+
+where:
+
+* `[INSTANCE_NAME]` is the name of the instance.
+* `[IP_ADDRESS]` is the IP address to assign to the instance. Use the IP address, not the address name.
+
+## Reserving a new static internal IP address
+
+Using the `gcloud` tool, run the `compute addresses create` command:
+
+```text
+gcloud compute addresses create [ADDRESS_NAME] [[ADDRESS_NAME]..] \
+    --region [REGION] --subnet [SUBNETWORK] \
+    --addresses [IP_ADDRESS]
+```
+
+where:
+
+* `[ADDRESS_NAME]` is desired names of one or more addresses to create.
+* `[REGION]` is the region for this request.
+* `[SUBNETWORK]` is the subnet for this internal IP address.
+* `[IP_ADDRESS]` is the IP address to reserve, which must be within the subnet's IP range. If unspecified, one will be automatically allocated from the subnet.
+
+For example, to reserve an automatically allocated internal IP address from a subnet:
+
+```text
+gcloud compute addresses create example-address-1 \
+    --region us-central1 --subnet subnet-1
+```
+
+To reserve a specific internal IP address from a subnet:
+
+```text
+gcloud compute addresses create example-address-1 \
+    --region us-central1 --subnet subnet-1 --addresses 10.128.0.12
+```
+
+You can create multiple addresses by passing in more than one address name. However, all the addresses will be reserved in the same subnet. For example:
+
+```text
+gcloud compute addresses create example-address-1 example-address-2 \
+    --region us-central1 --subnet subnet-1 \
+    --addresses 10.128.0.12,10.128.0.13
+```
 

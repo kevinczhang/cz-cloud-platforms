@@ -73,8 +73,6 @@ If you want to be notified of uptime failures, create an alerting policy for you
 
 To create an alerting policy, you must describe the circumstances under which you want to be alerted and how you want to be notified.
 
-You can create and manage **alerting policies** with the Stackdriver Monitoring console, the [Stackdriver Monitoring API](https://cloud.google.com/monitoring/api/v3/), and [Cloud SDK](https://cloud.google.com/sdk/gcloud/reference/alpha/monitoring/policies).
-
 Each policy specifies the following:
 
 * **Conditions** that identify an unhealthy state for a resource or a group of resources.

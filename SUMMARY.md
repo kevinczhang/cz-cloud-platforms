@@ -95,6 +95,8 @@
         * [bq for bigQuery](google-cloud-sdk/google-cloud-sdk/gcloud/database/bq-command-line-tool.md)
       * [Network](google-cloud-sdk/google-cloud-sdk/gcloud/network/README.md)
         * [gcloud compute networks](google-cloud-sdk/google-cloud-sdk/gcloud/network/gcloud-compute-networks.md)
+      * [Stackdriver](google-cloud-sdk/google-cloud-sdk/gcloud/stackdriver/README.md)
+        * [gcloud logging](google-cloud-sdk/google-cloud-sdk/gcloud/stackdriver/gcloud-logging.md)
       * [gcloud deployment-manager](google-cloud-sdk/google-cloud-sdk/gcloud/gcloud-deployment-manager.md)
   * [Data analytics](google-cloud-sdk/big-data/README.md)
     * [Cloud Pub/Sub](google-cloud-sdk/big-data/cloud-pub-sub.md)
