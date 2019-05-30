@@ -11,7 +11,7 @@ There are three kinds of roles in Cloud IAM:
 
 * **Primitive roles**: The roles historically available in the Google Cloud Platform Console will continue to work. These are the **Owner**, **Editor**, and **Viewer** roles.
 * **Predefined roles**: Predefined roles are the Cloud IAM roles that give finer-grained access control than the primitive roles. For example, the predefined role **Pub/Sub Publisher** \(roles/pubsub.publisher\) provides access to _only_ publish messages to a Cloud Pub/Sub topic.
-* **Custom roles**: Roles that you create to tailor permissions to the needs of your organization when predefined roles don't meet your needs.
+* **Custom roles**: Roles that you create to tailor permissions to the needs of your organization when predefined roles don't meet your needs. Combine roles or permissions.
 
 To determine if one or more permissions are included in a primitive, predefined, or custom role, you can use one of the following methods:
 
@@ -271,7 +271,7 @@ Cloud IAM provides additional predefined roles that give granular access to spec
 | `roles/ spanner.databaseUser` | Permission to read from and write to the Cloud Spanner database, execute SQL queries on the database, and view and update the schema. |
 | `roles/ spanner.viewer` | Permission to view all Cloud Spanner instances and databases, but not modify or read from them. |
 
-### Custom roles <a id="custom_roles"></a>
+## Custom roles
 
 Custom roles are user-defined, and allow you to bundle one or more supported permissions to meet your specific needs. Custom roles are not maintained by Google; when new permissions, features, or services are added to GCP, your custom roles will not be updated automatically.
 
