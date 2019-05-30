@@ -2,7 +2,7 @@
 description: Create and manage Google Cloud Dataproc clusters.
 ---
 
-# gcloud dataproc clusters
+# clusters
 
 `gcloud dataproc clusters` [`COMMAND`](https://cloud.google.com/sdk/gcloud/reference/dataproc/clusters/#COMMAND) \[[`--region`](https://cloud.google.com/sdk/gcloud/reference/dataproc/clusters/#--region)=`REGION`\] \[[`GCLOUD_WIDE_FLAG`](https://cloud.google.com/sdk/gcloud/reference/dataproc/clusters/#GCLOUD-WIDE-FLAGS) `…`\]
 

@@ -34,5 +34,17 @@ description: >-
 
  `gcloud sql databases create` [`DATABASE`](https://cloud.google.com/sdk/gcloud/reference/sql/databases/create#DATABASE) [`--instance`](https://cloud.google.com/sdk/gcloud/reference/sql/databases/create#--instance)=`INSTANCE`, [`-i`](https://cloud.google.com/sdk/gcloud/reference/sql/databases/create#-i) [`INSTANCE`](https://cloud.google.com/sdk/gcloud/reference/sql/databases/create#INSTANCE) \[[`--async`](https://cloud.google.com/sdk/gcloud/reference/sql/databases/create#--async)\]\[[`--charset`](https://cloud.google.com/sdk/gcloud/reference/sql/databases/create#--charset)=`CHARSET`\] \[[`--collation`](https://cloud.google.com/sdk/gcloud/reference/sql/databases/create#--collation)=`COLLATION`\] \[[`GCLOUD_WIDE_FLAG`](https://cloud.google.com/sdk/gcloud/reference/sql/databases/create#GCLOUD-WIDE-FLAGS) `…`\]
 
+## gcloud sql backups
 
+Provide commands for working with backups of Cloud SQL instances including listing and getting information about backups for a Cloud SQL instance.
+
+ `gcloud sql backups` [`COMMAND`](https://cloud.google.com/sdk/gcloud/reference/sql/backups/#COMMAND) \[[`GCLOUD_WIDE_FLAG`](https://cloud.google.com/sdk/gcloud/reference/sql/backups/#GCLOUD-WIDE-FLAGS) `…`\]
+
+ `COMMAND` is one of the following:
+
+* [`create`](https://cloud.google.com/sdk/gcloud/reference/sql/backups/create)Creates a backup of a Cloud SQL instance.
+* [`delete`](https://cloud.google.com/sdk/gcloud/reference/sql/backups/delete)Delete a backup of a Cloud SQL instance.
+* [`describe`](https://cloud.google.com/sdk/gcloud/reference/sql/backups/describe)Retrieves information about a backup.
+* [`list`](https://cloud.google.com/sdk/gcloud/reference/sql/backups/list)Lists all backups associated with a given instance.
+* [`restore`](https://cloud.google.com/sdk/gcloud/reference/sql/backups/restore)Restores a backup of a Cloud SQL instance.
 
