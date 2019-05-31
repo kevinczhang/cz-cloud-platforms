@@ -82,6 +82,7 @@
       * [gcloud sql](google-cloud-sdk/google-cloud-sdk/database/gcloud-sql.md)
       * [gcloud datastore](google-cloud-sdk/google-cloud-sdk/database/gcloud-datastore.md)
       * [gcloud bigtable](google-cloud-sdk/google-cloud-sdk/database/gcloud-bigtable/README.md)
+        * [emulator](google-cloud-sdk/google-cloud-sdk/database/gcloud-bigtable/emulator.md)
         * [cbt](google-cloud-sdk/google-cloud-sdk/database/gcloud-bigtable/cbt.md)
       * [gcloud spanner](google-cloud-sdk/google-cloud-sdk/database/gcloud-spanner/README.md)
         * [gcloud spanner instances](google-cloud-sdk/google-cloud-sdk/database/gcloud-spanner/gcloud-spanner-instances.md)
